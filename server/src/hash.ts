@@ -37,7 +37,7 @@ function getEncoding(encoding: Encoding): BinaryToTextEncoding {
   }
 }
 
-export default function Hash(
+export default function hash(
   req: Request
 ) {
   // retrieving values from enums
