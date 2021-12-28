@@ -1,5 +1,5 @@
 import crypto, { BinaryToTextEncoding } from "crypto";
-import { Encoding, Algorithm } from "./types";
+import { Encoding, Algorithm, Request } from "./types";
 
 function getAlgorithmType(algorithm: Algorithm): string {
   const algo = algorithm;
@@ -38,17 +38,15 @@ function getEncoding(encoding: Encoding): BinaryToTextEncoding {
 }
 
 export default function Hash(
-  algorithm: Algorithm,
-  str: string,
-  encoding: Encoding
+  req: Request
 ) {
   // retrieving values from enums
-  const algorithmType = getAlgorithmType(algorithm);
-  const encodingType: BinaryToTextEncoding = getEncoding(encoding);
+  const algorithmType = getAlgorithmType(req.algorithm);
+  const encodingType: BinaryToTextEncoding = getEncoding(req.encoding);
 
   const hash = crypto.createHash(algorithmType);
 
-  hash.update(str).digest(encodingType);
+  hash.update(req.str).digest(encodingType);
 
   return hash;
 }
