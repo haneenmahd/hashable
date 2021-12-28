@@ -4,7 +4,7 @@
   "description": "The Main Entry to Hashable CodeBase",
   "main": "server/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/haneenmahd/hashable/issues"
   },
-  "homepage": "https://github.com/haneenmahd/hashable#readme"
+  "homepage": "https://github.com/haneenmahd/hashable#readme",
+  "devDependencies": {
+    "eslint": "^8.5.0"
+  }
 }
