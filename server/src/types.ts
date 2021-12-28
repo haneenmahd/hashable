@@ -1,3 +1,5 @@
+import crypto from "crypto";
+
 enum Algorithm {
   SHA256,
   SHA512,
@@ -16,4 +18,8 @@ interface Request {
   encoding: Encoding;
 }
 
-export { Request, Algorithm, Encoding };
+interface HmacRequest extends Request {
+  key: crypto.BinaryLike | crypto.KeyObject;
+}
+
+export { Request, HmacRequest, Algorithm, Encoding };
