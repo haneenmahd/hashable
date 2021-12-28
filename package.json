@@ -1,0 +1,30 @@
+{
+  "name": "hashable-base",
+  "version": "1.0.0",
+  "description": "The Main Entry to Hashable CodeBase",
+  "main": "server/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haneenmahd/hashable.git"
+  },
+  "keywords": [
+    "A",
+    "Client-Side",
+    "Gateway",
+    "for",
+    "users",
+    "to",
+    "interact",
+    "with",
+    "cryptography"
+  ],
+  "author": "Haneen Mahdin <haneenmahdin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haneenmahd/hashable/issues"
+  },
+  "homepage": "https://github.com/haneenmahd/hashable#readme"
+}
