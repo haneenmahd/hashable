@@ -44,9 +44,7 @@ export default function hash(
   const algorithmType = getAlgorithmType(req.algorithm);
   const encodingType: BinaryToTextEncoding = getEncoding(req.encoding);
 
-  const hash = crypto.createHash(algorithmType);
-
-  hash.update(req.str).digest(encodingType);
+  const hash = crypto.createHash(algorithmType).update(req.str).digest(encodingType);
 
   return hash;
 }
