@@ -1,0 +1,26 @@
+main {
+    padding: 20px;
+}
+
+main div.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 29px;
+    width: 80vw;
+}
+
+main div.main-header h1 {
+    font-weight: 700;
+    text-align: center;
+    margin: 8px 0;
+}
+
+main div.main-header h3 {
+    font-weight: 600;
+    color: #3C4444;
+    text-align: center;
+    margin: 8px 0;
+}
