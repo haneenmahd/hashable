@@ -47,4 +47,4 @@ export default function hash(
   const hash = crypto.createHash(algorithmType).update(req.str).digest(encodingType);
 
   return hash;
-}``
+}
