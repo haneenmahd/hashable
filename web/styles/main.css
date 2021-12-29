@@ -1,5 +1,8 @@
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 main div.main-header {
@@ -9,7 +12,7 @@ main div.main-header {
     align-items: center;
     justify-content: center;
     padding: 29px;
-    width: 80vw;
+    width: 100vw;
 }
 
 main div.main-header h1 {
@@ -24,4 +27,75 @@ main div.main-header h3 {
     color: #3C4444;
     text-align: center;
     margin: 8px 0;
+}
+
+main div.actions-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    background: rgba(18, 21, 21, 0.48);
+    border-radius: 29px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 32px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: rgba(18, 21, 21, 0.543);
+}
+
+button svg {
+    height: 16px;
+    width: 16px;
+    margin: 0 6px;
+}
+
+button.main {
+    background: #121515;
+    font-weight: 700;
+}
+
+button.main:hover {
+    background: #1b1f1f;
+}
+
+@media screen and (max-width: 600px) {
+    main div.main-header h1 {
+        font-size: 250%;
+        padding: 20px;
+        margin: 4px 0;
+    }
+
+    main div.main-header h3 {
+        font-size: 120%;
+        margin: 4px 0;
+    }
+
+    main div.actions-group {
+        width: 85vw;
+        padding: 10%;
+    }
+
+    main div.actions-group button {
+        margin: 0 8px;
+        padding: 15px;
+    }
 }
