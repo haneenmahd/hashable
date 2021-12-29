@@ -16,16 +16,14 @@
       content="Hashable is a playground and a REST API where users can experiment and play with cryptographic functions easily, open-source and created by Haneen Mahdin on GitHub"
     />
 
-    <link rel="icon" href="../icons/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/playground.css" />
-    <link rel="stylesheet" href="../styles/nav.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="./icons/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -62,51 +60,39 @@
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
+
     <nav id="main-nav">
-      <a href="./index.html"><i data-feather="home"></i>Home</a>
-      <a class="active" href="./playground.html"
-        ><i data-feather="play"></i>Playground</a
-      >
-      <a href="#"><i data-feather="command"></i>API</a>
-      <a href="#">v1.0.0 🚀</a>
+        <a class="active" href="./index.html"><i data-feather="home"></i>Home</a>
+        <a href="./pages/playground.html"><i data-feather="play"></i>Playground</a>
+        <a href="#"><i data-feather="command"></i>API</a>
+        <a href="#">v1.0.0 🚀</a>
     </nav>
 
-    <div id="form-card">
-
-      <h2>Create a Playground</h2>
-      <div class="name-input">
-        <label for="playground-name"> Name </label>
-        <input placeholder="Eg: myPassCipher" id="playground-name" type="text" />
-      </div>
-
-      <!-- Release in v2
-        <div class="template-input">
-        <label for="template"> Template </label>
-        <div class="template-drop-down">
-            <div><p>Choose Template</p> <i data-feather="chevron-down"></i></div>
-            <span class="templates">
-                <span class="option">Random Hash Generator</span>
-                <span class="option">Hmac Generator</span>
-                <span class="option">Blank</span>
-            </span>
+    <main>
+        <div class="main-header">
+          <h1>Hash It. Right Now</h1>
+          <h3>Run and Play with some cryptographical experiments 🔬</h3>
         </div>
-      </div>
-      -->
+        <div class="actions-group">
+          <button class="main">
+            <i data-feather="check-circle"></i> Run Tests
+          </button>
+          <button>
+            <i data-feather="archive"></i> Documentation
+          </button>
+        </div>
+    </main>
 
-      <div class="info">
-        <i data-feather="info"></i>
-        <p>
-            <b>Info:</b>
-            The playground data will be stored in the LocalStorage
-        </p>
-      </div>
+    <footer>
+      <p><b id="hash-generated-count"></b> hashes generated until today!</p>
+      <p>Meet Developer <a about="_blank" href="https://github.com/haneenmahd">@haneenmahd</a></p>
+    </footer>
 
-      <button id="submit-button" class="small main full-width">
-        Submit
-      </button>
-    </div>
+    <script src="./scripts/index.js"></script>
 
-    <script src="../scripts/playground.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--Icon Package-->
+    <script src="https://unpkg.com/feather-icons"></script>
     <script>
       feather.replace();
     </script>

@@ -1,3 +1,4 @@
+/** Release in v2
 const el = document.getElementsByClassName("template-drop-down")[0];
 const optionsEl = document.querySelector("div#form-card div div.template-drop-down span.templates");
 
@@ -17,3 +18,21 @@ options.forEach(option => {
        templateInput.appendChild(chosenText);
     };
 });
+*/
+
+/**
+ * Creates a playground and stores it in the localstorage
+ * @param {string} name 
+ */
+function createPlayground() {
+    const playgroundName = document.getElementById("playground-name").value;
+
+    localStorage.setItem("playground-name", playgroundName);
+}
+
+const submitButton = document.getElementById("submit-button");
+
+submitButton.onclick = () => {
+    createPlayground();
+    window.location.pathname = "/web/pages/editor.html";
+};  
