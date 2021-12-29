@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>
       Hashable | A Playground to test with cryptographic functions is
       open-source and maintained on GitHub
@@ -16,14 +16,16 @@
       content="Hashable is a playground and a REST API where users can experiment and play with cryptographic functions easily, open-source and created by Haneen Mahdin on GitHub"
     />
 
-    <link rel="icon" href="./icons/icon.png" type="image/x-icon" />
+    <link rel="icon" href="../icons/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/playground.css" />
     <link rel="stylesheet" href="../styles/nav.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -58,13 +60,50 @@
 
     <link rel="canonical" href="https://hashable.github.io" />
     <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
-    <main>
-        
-    </main>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <a href="#"><i data-feather="home"></i>Home</a>
+      <a class="active" href="./playground.html"
+        ><i data-feather="play"></i>Playground</a
+      >
+      <a href="#"><i data-feather="command"></i>API</a>
+      <a href="#">v1.0.0 🚀</a>
+    </nav>
+
+    <div id="form-card">
+
+      <h2>Create a Playground</h2>
+      <div class="name-input">
+        <label for="name"> Name </label>
+        <input placeholder="Eg: myPassCipher" id="name" type="text" />
+      </div>
+
+      <div class="template-input">
+        <label for="template"> Template </label>
+        <div class="template-drop-down">
+            <div><p>Choose Template</p> <i data-feather="chevron-down"></i></div>
+            <span class="templates">
+                <span class="option">Random Hash Generator</span>
+                <span class="option">Hmac Generator</span>
+                <span class="option">Blank</span>
+            </span>
+        </div>
+      </div>
+
+      <div class="info">
+        <i data-feather="info"></i>
+        <p>
+            <b>Info:</b>
+            The playground data will be stored in the LocalStorage
+        </p>
+      </div>
+
+    </div>
+
+    <script src="../scripts/playground.js"></script>
     <script>
-        feather.replace();
+      feather.replace();
     </script>
-</body>
+  </body>
 </html>
