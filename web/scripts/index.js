@@ -5,6 +5,9 @@ function getServerPingedCount() {
     axios.get("http://localhost:3000/api/ping-count")
     .then(res => {
         countEl.innerText = String(res.data.count);
+    })
+    .catch(() => {
+        countEl.innerText = "Failed to find";
     });
 }
 

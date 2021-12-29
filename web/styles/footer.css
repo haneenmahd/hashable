@@ -6,3 +6,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+footer p {
+    margin: 4px 0;
+}
+
+footer p a {
+    font-weight: bold;
+}
