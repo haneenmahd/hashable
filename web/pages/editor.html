@@ -5,7 +5,7 @@
       Hashable | A Playground to test with cryptographic functions is
       open-source and maintained on GitHub
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link name="url" href="https://hashable.github.io" />
     <meta
       name="description"
@@ -62,18 +62,28 @@
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <nav id="main-nav">
-      <a href="./index.html"><i data-feather="home"></i>Home</a>
-      <a class="active" href="./playground.html"
-        ><i data-feather="play"></i>Playground</a
-      >
-      <a href="#"><i data-feather="command"></i>API</a>
-      <a href="#">v1.0.0 🚀</a>
-    </nav>
 
-    <textarea>
-        
-    </textarea>
+    <button class="main back-to-home">
+      <i data-feather="corner-down-left"></i>
+      <a href="../index.html">Back to Home</a> 
+    </button>
+
+    <div class="strings-card">
+      <h2>Strings</h2>
+      <p>Enter the strings you wanna hash</p>
+      <div class="string">ThisIsGoingToBeHashed</div>
+      <div class="string">ThisIsGoingToBeHashed</div>
+    </div>
+
+    <div class="methods-card">
+      <h2>Methods</h2>
+      <p>Methods to use to hash your strings</p>
+    </div>
+
+    <div class="result-card">
+      <h2>Result</h2>
+      <p id="hash">HASH: </p>
+    </div>
 
     <script src="../scripts/editor.js"></script>
     <script>

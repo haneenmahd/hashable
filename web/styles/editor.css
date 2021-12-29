@@ -1,5 +1,111 @@
-textarea {
-    height: 90vh;
-    max-width: 70vw;
-    resize: none;
+body {
+    background: #F4F4F4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #121515;
+}
+
+button.back-to-home {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    padding: 15px;
+}
+
+div.strings-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 43px;
+
+    position: absolute;
+    width: 467px;
+    height: 326px;
+    left: 234px;
+    top: 100px;
+
+    background: #FFFFFF;
+    box-shadow: 0px -19px 21px rgba(0, 0, 0, 0.04), 0px 19px 21px rgba(0, 0, 0, 0.09);
+    border-radius: 35px;
+    overflow: scroll;
+}
+
+div p {
+    color: #3B4242;
+    margin: 8px 0;
+}
+
+div.strings-card .string {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 22px;
+
+    position: static;
+    width: 100%;
+    height: 39px;
+    left: 0px;
+    top: 49px;
+
+    background: #DAE3E3;
+    border-radius: 15px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+div.methods-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 43px;
+
+    position: absolute;
+    width: 491px;
+    height: 519px;
+    left: 803px;
+    top: 100px;
+
+    background: #FFFFFF;
+    box-shadow: 0px -19px 21px rgba(0, 0, 0, 0.04), 0px 19px 21px rgba(0, 0, 0, 0.09);
+    border-radius: 35px;
+}
+
+div.result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 43px;
+
+    position: absolute;
+    width: 642px;
+    height: 182px;
+    left: 59px;
+    top: 465px;
+
+    background: #FFFFFF;
+    box-shadow: 0px -19px 21px rgba(0, 0, 0, 0.04), 0px 19px 21px rgba(0, 0, 0, 0.09);
+    border-radius: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+    div.strings-card {
+        width: 320px;
+    }
+
+    div.methods-card {
+        width: 420px;
+        height: 450px;
+        left: 55%;
+    }
+
+    div.result-card {
+        width: 520px;
+    }
 }
