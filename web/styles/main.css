@@ -4,6 +4,7 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+    padding-top: 20px;
 }
 
 main div.main-header {
