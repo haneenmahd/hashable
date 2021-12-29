@@ -12,6 +12,7 @@ import { convertAlgo, convertEncoding } from "./utils/convert";
 import hash from "./src/hash";
 import hmac from "./src/hmac";
 import storeCount from "./utils/storeCount";
+import getCount from "./utils/getCount";
 
 const app = express();
 const PORT: string | number = process.env.PORT || 3000;
@@ -40,6 +41,14 @@ app.use("/api/hmac", (req, res, next) => {
 
 app.get("/", (req, res) => {
     res.send("Listening and watching out for crypto functions 👀");
+});
+
+app.get("/api/ping-count", (req, res) => {
+  const response = {
+    count: getCount()
+  };
+
+  res.end(JSON.stringify(response));
 });
 
 app.get("/api/hash", (req, res) => {
