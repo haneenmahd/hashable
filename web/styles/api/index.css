@@ -1,0 +1,6 @@
+div.api-nav {
+    background-color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 0.07999999821186066);
+	width:calc(100vw / 4.5);
+	height:80vh;
+	border-radius: 33px;
+}

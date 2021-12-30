@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Documentation for Hashable</title>
+    <link rel="stylesheet" href="../../styles/api/index.css" />
     <title>
       Hashable | A Playground to test with cryptographic functions is
       open-source and maintained on GitHub
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link name="url" href="https://hashable.netlify.app" />
     <meta
       name="description"
@@ -17,9 +21,8 @@
     />
 
     <link rel="icon" href="../icons/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/playground.css" />
-    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/nav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,52 +63,25 @@
 
     <link rel="canonical" href="https://hashable.netlify.app" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <nav id="main-nav">
-      <a href="../index.html"><i data-feather="home"></i>Home</a>
-      <a class="active" href="./playground.html"><i data-feather="play"></i>Playground</a>
-      <a href="./api/index.html"><i data-feather="command"></i>API</a>
+      <a href="../../index.html"><i data-feather="home"></i>Home</a>
+      <a href="../playground.html"><i data-feather="play"></i>Playground</a>
+      <a class="active" href="./index.html"><i data-feather="command"></i>API</a>
       <a href="#">v1.0.0 🚀</a>
     </nav>
 
-    <div id="form-card">
-      <h2>Create a Playground</h2>
-      <div class="name-input">
-        <label for="playground-name"> Name </label>
-        <input
-          placeholder="Eg: myPassCipher"
-          id="playground-name"
-          type="text"
-        />
-      </div>
-
-      <!-- Release in v2
-        <div class="template-input">
-        <label for="template"> Template </label>
-        <div class="template-drop-down">
-            <div><p>Choose Template</p> <i data-feather="chevron-down"></i></div>
-            <span class="templates">
-                <span class="option">Random Hash Generator</span>
-                <span class="option">Hmac Generator</span>
-                <span class="option">Blank</span>
-            </span>
-        </div>
-      </div>
-      -->
-
-      <div class="info">
-        <i data-feather="info"></i>
-        <p>
-          <b>Info:</b>
-          The playground data will be stored in the LocalStorage
-        </p>
-      </div>
-
-      <button id="submit-button" class="small main full-width">Submit</button>
+    <div class="api-nav">
+      <div class="api-link active">Getting Started</div>
+      <div class="api-link">Tools Required</div>
+      <div class="api-link">Supported Languages</div>
+      <div class="api-link">API</div>
+      <div class="api-link">Examples</div>
+      <div class="api-link">About Our Server</div>
     </div>
 
-    <script src="../scripts/playground.js"></script>
     <script>
       feather.replace();
     </script>
