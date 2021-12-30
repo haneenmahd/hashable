@@ -60,29 +60,40 @@
 
     <link rel="canonical" href="https://hashable.github.io" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
 
-    <button class="main back-to-home">
+    <button class="back-to-home">
       <i data-feather="corner-down-left"></i>
       <a href="../index.html">Back to Home</a> 
     </button>
 
-    <div class="strings-card">
-      <h2>Strings</h2>
-      <p>Enter the strings you wanna hash</p>
-      <div class="string">ThisIsGoingToBeHashed</div>
-      <div class="string">ThisIsGoingToBeHashed</div>
+    <div class="editor-card">
+      <div>
+        <h2>String</h2>
+        <p>Enter the string you wanna hash</p>
+        <input id="hashable-string" type="text" class="string" value="ThisIsGoingToBeHashed" />
+      </div>
+      <div>
+        <h2>Method</h2>
+        <p>Methods to use to hash your strings</p>
+        <input id="hashable-method" type="text" class="string" value="md5" />
+      </div>
+      <div>
+        <h2>Encoding</h2>
+        <p>The encoding you might wanna use</p>
+        <input id="hashable-encoding" type="text" class="string" value="hex" />
+      </div>
     </div>
 
-    <div class="methods-card">
-      <h2>Methods</h2>
-      <p>Methods to use to hash your strings</p>
-    </div>
+    <button id="hashable-button" class="main">
+      Hash <i data-feather="command"></i>
+    </button>
 
     <div class="result-card">
       <h2>Result</h2>
-      <p id="hash">HASH: </p>
+      <p id="hash-output">None</p>
     </div>
 
     <script src="../scripts/editor.js"></script>
