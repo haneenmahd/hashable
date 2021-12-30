@@ -6,9 +6,8 @@ function openGitHubDocs() {
 }
 
 function getLastOpenedProject() {
-  openUpLastProjectButton.innerText = `Open: ${
-    localStorage.getItem("playground-name") || "+ New Project"
-  }`;
+  let innerStr = localStorage.getItem("playground-name") !== null ? `Open: ${localStorage.getItem("playground-name")}` : "+ New Project";
+  openUpLastProjectButton.innerText = innerStr;
 }
 
 function openLastProject() {
