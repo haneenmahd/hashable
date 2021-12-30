@@ -21,3 +21,24 @@ hashableButton.onclick = () => {
 
     fetchHash(algorithm, value, encoding);
 };
+
+function saveData() {
+    const hashableString = document.getElementById("hashable-string").value;
+    const hashMethod = document.getElementById("hashable-method").value;
+    const hashEncoding = document.getElementById("hashable-encoding").value;
+
+    window.localStorage.setItem("hash-string", hashableString);
+    window.localStorage.setItem("hash-method", hashMethod);
+    window.localStorage.setItem("hash-encoding", hashEncoding);
+}
+
+const saveButton = document.getElementById("save-button");
+const backToHome = document.getElementsByClassName("back-to-home")[0];
+
+saveButton.onclick = () => {
+  saveData();
+};
+
+backToHome.onclick = () => {
+  saveData();
+};

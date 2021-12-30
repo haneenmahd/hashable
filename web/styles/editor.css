@@ -78,25 +78,6 @@ div.editor-card .string:focus {
     background: #b4c0c0;
 }
 
-/*
-div.methods-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 43px;
-
-    position: absolute;
-    width: 491px;
-    height: 519px;
-    left: 803px;
-    top: 100px;
-
-    background: #FFFFFF;
-    box-shadow: 0px -19px 21px rgba(0, 0, 0, 0.04), 0px 19px 21px rgba(0, 0, 0, 0.09);
-    border-radius: 35px;
-}
-*/
-
 div.result-card {
     display: flex;
     flex-direction: column;
@@ -115,6 +96,13 @@ div.result-card {
 div.result-card p#hash-output {
     width: 90%;
     overflow-wrap: break-word;
+}
+
+div.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {

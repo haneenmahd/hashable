@@ -62,3 +62,26 @@ div#content p {
     margin: 8px 0;
     color: #898181;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    div.api-nav {
+        height: 300px;
+        margin: 0;
+    }
+
+    div#content {
+        width: 100vw;
+        padding: 30px;
+    }
+
+    div#content p {
+        overflow-wrap: break-word;
+    }
+}

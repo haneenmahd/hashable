@@ -35,4 +35,4 @@ const submitButton = document.getElementById("submit-button");
 submitButton.onclick = () => {
     createPlayground();
     window.location.pathname = "pages/editor.html";
-};  
+};
