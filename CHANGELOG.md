@@ -1,4 +1,4 @@
-# Beta v1.0.0
+# Beta v1.0.0 🚀
 
 Features:
 
