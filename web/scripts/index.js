@@ -7,7 +7,7 @@ function getLastOpenedProject() {
 }
 
 function openLastProject() {
-  window.location.pathname = "/web/pages/editor.html";
+  window.location.pathname = "/pages/editor.html";
 }
 
 function getServerPingedCount() {
