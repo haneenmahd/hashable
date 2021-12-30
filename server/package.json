@@ -2,7 +2,7 @@
   "name": "hashable-server",
   "version": "1.0.0",
   "description": "The server which cryptographical functions to the client-web",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "build": "tsc",
