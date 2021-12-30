@@ -1,17 +1,34 @@
-function getServerPingedCount() {
-    const countEl = document.getElementById("hash-generated-count");
+const openUpLastProjectButton = document.getElementById("open-last-project");
 
-    // eslint-disable-next-line no-undef
-    axios
-      .get("https://hashable-server.herokuapp.com/api/ping-count")
-      .then((res) => {
-        countEl.innerText = String(res.data.count);
-      })
-      .catch(() => {
-        countEl.innerText = "Failed to find";
-      });
+function getLastOpenedProject() {
+  openUpLastProjectButton.innerText = `Open last created: ${
+    localStorage.getItem("playground-name") || "+ New Project"
+  }`;
+}
+
+function openLastProject() {
+  window.location.pathname = "/web/pages/editor.html";
+}
+
+function getServerPingedCount() {
+  const countEl = document.getElementById("hash-generated-count");
+
+  // eslint-disable-next-line no-undef
+  axios
+    .get("https://hashable-server.herokuapp.com/api/ping-count")
+    .then((res) => {
+      countEl.innerText = String(res.data.count);
+    })
+    .catch(() => {
+      countEl.innerText = "Failed to find";
+    });
 }
 
 window.onload = () => {
-    getServerPingedCount();
+  getLastOpenedProject();
+  getServerPingedCount();
+};
+
+openUpLastProjectButton.onclick = () => {
+  openLastProject();
 };
