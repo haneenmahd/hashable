@@ -1,6 +1,64 @@
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 div.api-nav {
     background-color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 0.07999999821186066);
-	width:calc(100vw / 4.5);
-	height:80vh;
+	width: 250px;
+	height:70vh;
 	border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+div.api-nav .api-link.active {
+    background-color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 0.2800000011920929);
+}
+
+div.api-nav .api-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 1);
+	font-family: "Inter", sans-serif;
+    border-radius: 14px;
+    width:204px;
+	height:39px;
+	text-align:center;
+	font-size:18px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+div.api-nav .api-link:hover {
+    background-color: rgba(18, 21, 21, 0.057);
+}
+
+div#content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    height: 70vh;
+    padding: 50px 10px;
+}
+
+div#content h3 {
+    color: #464F4F;
+    margin: 4px 0;
+    font-size: 120%;
+}
+
+div#content p {
+    margin: 8px 0;
+    color: #898181;
 }
