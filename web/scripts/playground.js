@@ -34,5 +34,5 @@ const submitButton = document.getElementById("submit-button");
 
 submitButton.onclick = () => {
     createPlayground();
-    window.location.pathname = "/web/pages/editor.html";
+    window.location.pathname = "pages/editor.html";
 };  
