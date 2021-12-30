@@ -1,7 +1,12 @@
 const openUpLastProjectButton = document.getElementById("open-last-project");
+const openDocumentationButton = document.getElementById("github-docs");
+
+function openGitHubDocs() {
+  open("https://github.com/haneenmahd/hashable#readme");
+}
 
 function getLastOpenedProject() {
-  openUpLastProjectButton.innerText = `Open last created: ${
+  openUpLastProjectButton.innerText = `Open: ${
     localStorage.getItem("playground-name") || "+ New Project"
   }`;
 }
@@ -31,4 +36,8 @@ window.onload = () => {
 
 openUpLastProjectButton.onclick = () => {
   openLastProject();
+};
+
+openDocumentationButton.onclick = () => {
+  openGitHubDocs();
 };

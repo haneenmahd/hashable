@@ -31,6 +31,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 200px;
     padding: 21px;
     background: rgba(18, 21, 21, 0.48);
     border-radius: 29px;
