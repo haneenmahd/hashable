@@ -40,4 +40,4 @@ These are the available routes of the server.
 These are all available to public for free.
 > Warning this should be not used for unethical or bad purposes 🙂
 
-For security issues, please text me on Twitter at [HaneenMahdin](https://twitter.com/HaneenMahdin).
+For security issues, please text me on Twitter at [HaneenMahdin](https://twitter.com/HaneenMahdin) ✉️.
