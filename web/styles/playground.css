@@ -20,7 +20,7 @@ div#form-card {
     justify-content: center;
     padding: 55px;
     width: 30vw;
-    min-height: 60vh;
+    min-height: 50vh;
     background: #FFFFFF;
     box-shadow: 0px -19px 21px rgba(0, 0, 0, 0.04), 0px 19px 21px rgba(0, 0, 0, 0.09);
     border-radius: 35px;
