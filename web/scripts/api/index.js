@@ -1,4 +1,4 @@
-const links = document.querySelectorAll("div.api-nav .api-link");
+const links = document.querySelectorAll("aside.api-nav .api-link");
 const contentHeader = document.getElementById("content-header");
 const contentSecondaryHeader = document.getElementById("content-secondary-header");
 const contentDescription = document.getElementById("content-description");
@@ -9,7 +9,7 @@ contentDescription.innerText = links[0].getAttribute("data-description");
 
 links.forEach(link => {
     link.onclick = () => {
-        document.querySelectorAll("div.api-nav .api-link.active")[0].classList.remove("active");
+        document.querySelectorAll("aside.api-nav .api-link.active")[0].classList.remove("active");
 
         link.classList.add("active");
 

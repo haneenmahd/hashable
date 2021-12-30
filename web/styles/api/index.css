@@ -7,7 +7,7 @@ body {
     justify-content: center;
 }
 
-div.api-nav {
+aside.api-nav {
     background-color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 0.07999999821186066);
 	width: 250px;
 	height:70vh;
@@ -19,11 +19,11 @@ div.api-nav {
     margin-right: 50px;
 }
 
-div.api-nav .api-link.active {
+aside.api-nav .api-link.active {
     background-color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 0.2800000011920929);
 }
 
-div.api-nav .api-link {
+aside.api-nav .api-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@ div.api-nav .api-link {
     transition: ease-in-out .2s;
 }
 
-div.api-nav .api-link:hover {
+aside.api-nav .api-link:hover {
     background-color: rgba(18, 21, 21, 0.057);
 }
 
