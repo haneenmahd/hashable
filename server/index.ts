@@ -57,7 +57,7 @@ app.get("/api/hash", (req, res) => {
       encoding: convertEncoding(String(req.query.encoding)),
     };
 
-    res.send(hash(reqObj));
+    res.end(hash(reqObj));
 });
 
 app.get("/api/hmac", (req, res) => {
@@ -68,7 +68,7 @@ app.get("/api/hmac", (req, res) => {
     key: String(req.query.key)
   };
 
-  res.send(hmac(reqObj));
+  res.end(hmac(reqObj));
 });
 
 console.log(`Listening and serving on PORT: ${PORT}`);
