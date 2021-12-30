@@ -1,5 +1,4 @@
 import express from "express";
-import open from "open";
 import cors from "cors";
 
 // data types ⦂
@@ -72,7 +71,5 @@ app.get("/api/hmac", (req, res) => {
   res.send(hmac(reqObj));
 });
 
-// opens and listens at a specific url
-open(`http://localhost:${PORT}`);
 console.log(`Listening and serving on PORT: ${PORT}`);
 app.listen(PORT);

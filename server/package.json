@@ -4,10 +4,11 @@
   "description": "The server which cryptographical functions to the client-web",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
+    "start": "node dist/index.js",
     "build": "tsc",
     "lint": "eslint .",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "build:start": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
