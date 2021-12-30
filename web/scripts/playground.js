@@ -1,24 +1,12 @@
-/** Release in v2
-const el = document.getElementsByClassName("template-drop-down")[0];
-const optionsEl = document.querySelector("div#form-card div div.template-drop-down span.templates");
+function loadLastSaved() {
+    if (localStorage.getItem("playground-name" !== null) || localStorage.getItem("playground-name") !== undefined) {
+        window.location.pathname = window.location.pathname.replace("playground", "editor");
+    } else {
+        const loaderElement = document.getElementsByClassName("loader-container")[0];
 
-el.onclick = () => {
-    el.classList.toggle("open");
-    optionsEl.classList.toggle("open");
-};
-
-const options = optionsEl.querySelectorAll("div#form-card div div.template-drop-down span.templates .option");
-const chosenText = document.createElement("b");
-const templateInput = document.getElementsByClassName("template-input")[0];
-
-options.forEach(option => {
-    option.onclick = () => {
-       chosenText.innerText = option.innerHTML;
-
-       templateInput.appendChild(chosenText);
-    };
-});
-*/
+        loaderElement.style.display = "none";
+    }
+}
 
 /**
  * Creates a playground and stores it in the localstorage
@@ -35,4 +23,10 @@ const submitButton = document.getElementById("submit-button");
 submitButton.onclick = () => {
     createPlayground();
     window.location.pathname = "pages/editor.html";
+};
+
+window.onload = () => {
+    setTimeout(() => {
+        loadLastSaved();
+    }, 1000);
 };
