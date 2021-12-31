@@ -81,7 +81,18 @@ div#content p {
         padding: 30px;
     }
 
-    div#content p {
+    div#content #content-header {
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    div#content #content-secondary-header {
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    div#content #content-description {
+        width: 100%;
         overflow-wrap: break-word;
     }
 }
