@@ -6,7 +6,7 @@ Features:
 - Some UI Bug Fixes.
 
 Bug Fixes:
-- [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground
+- [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground.
 - [#8](https://github.com/haneenmahd/hashable/issues/8) Fix SEO and splitbee analytics.
 - [#6](https://github.com/haneenmahd/hashable/issues/6) UI is not responsive when switching tabs in /api.
 - [#7](https://github.com/haneenmahd/hashable/issues/7) get the request sample code in playground.
