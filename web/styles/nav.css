@@ -1,3 +1,9 @@
+@keyframes move-in {
+  from {
+    top: -100%;
+  }
+}
+
 nav#main-nav {
   position: fixed;
   top: 5%;
@@ -8,6 +14,7 @@ nav#main-nav {
   left: 50%;
   transform: translate(-50%, 0);
   padding: 10px;
+  animation: move-in 1s ease-in-out;
 }
 
 nav#main-nav a {
