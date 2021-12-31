@@ -1,4 +1,4 @@
-# v1.0.0
+# v1.0.0 (upcoming) 👋
 
 Features:
 - Get the sample code of the request function in javascript.
