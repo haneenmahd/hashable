@@ -3,9 +3,10 @@
 Features:
 - Get the sample code of the request function in javascript.
 - Now the editor loads faster than before.
-- Some UI Bug Fixes.
+- Better UI 😊
 
 Bug Fixes:
+- [#14](https://github.com/haneenmahd/hashable/issues/14) Low Perfomance of the website.
 - [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground
 - [#8](https://github.com/haneenmahd/hashable/issues/8) Fix SEO and splitbee analytics.
 - [#6](https://github.com/haneenmahd/hashable/issues/6) UI is not responsive when switching tabs in /api.
