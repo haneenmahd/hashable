@@ -36,10 +36,6 @@ function setLoadedData() {
   encoding.value = fetchedData.hashEncoding || "hex";
 }
 
-hashableButton.onclick = () => {
-  fetchHash(algorithm.value, hashStr.value, encoding.value);
-};
-
 function saveData() {
   const hashableString = document.getElementById("hashable-string").value;
   const hashMethod = document.getElementById("hashable-method").value;
@@ -49,6 +45,41 @@ function saveData() {
   window.localStorage.setItem("hash-method", hashMethod);
   window.localStorage.setItem("hash-encoding", hashEncoding);
 }
+
+// do not use this function as a callback, because this only generates the string, the `generateSampleCode` function should be used.
+function sampleCode(algo, str, encoding) {
+  return `
+  fetch("https://hashable-server.herokuapp.com/api/hash?algorithm=${algo}&str=${str}&encoding=${encoding}")
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+  `;
+}
+
+function generateSampleCode() {
+  const codeElement = document.getElementById("sample-code-text");
+
+  codeElement.innerText = sampleCode(algorithm.value, hashStr.value, encoding.value);
+}
+
+window.onload = () => {
+  generateSampleCode();
+};
+
+hashStr.onchange = () => {
+  generateSampleCode();
+};
+
+algorithm.onchange = () => {
+  generateSampleCode();
+};
+
+encoding.onchange = () => {
+  generateSampleCode();
+};
+
+hashableButton.onclick = () => {
+  fetchHash(algorithm.value, hashStr.value, encoding.value);
+};
 
 saveButton.onclick = () => {
   saveData();
