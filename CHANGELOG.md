@@ -1,11 +1,15 @@
 # v1.0.0
 
 Features:
+- Get the sample code of the request function in javascript.
+- Now the editor loads faster than before.
+- Some UI Bug Fixes.
 
 Bug Fixes:
 - [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground
 - [#8](https://github.com/haneenmahd/hashable/issues/8) Fix SEO and splitbee analytics.
 - [#6](https://github.com/haneenmahd/hashable/issues/6) UI is not responsive when switching tabs in /api.
+- [#7](https://github.com/haneenmahd/hashable/issues/7) get the request sample code in playground.
 
 # Beta v1.0.0 🚀
 
