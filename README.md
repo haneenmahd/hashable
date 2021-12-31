@@ -8,7 +8,7 @@
     <a href="https://hashable.space">👋 Website</a>
     <a href="https://github.com/haneenmahd/hashable/tree/master/server#readme">📜 API documentation</a>
   </div>
-  <img src="https://user-images.githubusercontent.com/72091386/147578933-5804b90c-2d61-480d-8fd0-3ff8abe37f30.png" alt="Website UI Image" />
+  <img width="1473" alt="Screenshot 2021-12-31 at 4 42 35 PM" src="https://user-images.githubusercontent.com/72091386/147820471-76a7bc66-42ff-4e27-946b-66e5ef574275.png">
 </div>
 <h2>What is Hashable?</h2>
 <p><b>Hashable</b> is an open-source, client-side gateway for users to test out cryptographic functions and hashing methods.
