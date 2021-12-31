@@ -8,6 +8,7 @@ Features:
 
 Bug Fixes:
 
+- [#19](https://github.com/haneenmahd/hashable/issues/19) The Sample Code is making the UI Overflow.
 - [#14](https://github.com/haneenmahd/hashable/issues/14) Low Perfomance of the website.
 - [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground.
 - [#8](https://github.com/haneenmahd/hashable/issues/8) Fix SEO and splitbee analytics.
