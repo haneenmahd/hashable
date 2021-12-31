@@ -42,6 +42,7 @@ axios
 
 See more about our server documentation at [`server`](https://github.com/haneenmahd/hashable/tree/master/server)
 
+Get more examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master/examples).
 </p>
 
 <h2>
