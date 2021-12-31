@@ -5,13 +5,8 @@ function openGitHubDocs() {
   open("https://github.com/haneenmahd/hashable#readme");
 }
 
-function getLastOpenedProject() {
-  let innerStr = localStorage.getItem("playground-name") !== null ? `Open: ${localStorage.getItem("playground-name")}` : "+ New Project";
-  openUpLastProjectButton.innerText = innerStr;
-}
-
 function openLastProject() {
-  window.location.pathname = "/pages/editor.html";
+  window.location.pathname = "/pages/playground.html";
 }
 
 function getServerPingedCount() {
@@ -29,7 +24,6 @@ function getServerPingedCount() {
 }
 
 window.onload = () => {
-  getLastOpenedProject();
   getServerPingedCount();
 };
 
