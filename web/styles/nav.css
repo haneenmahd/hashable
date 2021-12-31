@@ -15,6 +15,7 @@ nav#main-nav {
   transform: translate(-50%, 0);
   padding: 10px;
   animation: move-in 1s ease-in-out;
+  z-index: 100;
 }
 
 nav#main-nav a {

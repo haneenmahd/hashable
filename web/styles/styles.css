@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+a, button, img, main {
+  z-index: 2;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -26,6 +30,7 @@ body {
   align-items: center;
   justify-content: space-around;
   animation: fade-in 0.7s ease-in-out;
+  padding-top: 100px;
 }
 
 a {
