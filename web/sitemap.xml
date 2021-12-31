@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.hashable.netlify.app</loc>
+    <loc>http://www.hashable.space</loc>
     <lastmod>2021-12-30</lastmod>
   </url>
   <url>
-    <loc>http://www.hashable.netlify.app/pages/playground</loc>
+    <loc>http://www.hashable.space/pages/playground</loc>
     <lastmod>2021-12-30</lastmod>
   </url>
   <url>
-    <loc>http://www.hashable.netlify.app/pages/editor</loc>
+    <loc>http://www.hashable.space/pages/editor</loc>
     <lastmod>2021-12-30</lastmod>
   </url>
   <url>
-    <loc>http://www.hashable.netlify.app/pages/api</loc>
+    <loc>http://www.hashable.space/pages/api</loc>
     <lastmod>2021-12-30</lastmod>
   </url>
 </urlset>
