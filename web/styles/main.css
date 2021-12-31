@@ -37,6 +37,12 @@ main div.actions-group {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    margin: 30px 0;
+}
+
+main img.illustration-img {
+    height: 300px;
+    width: 300px;
 }
 
 @media screen and (max-width: 600px) {

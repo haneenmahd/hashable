@@ -7,6 +7,10 @@ body {
     justify-content: center;
 }
 
+main {
+    max-width: 100vw;
+}
+
 aside.api-nav {
     background-color:rgba(18.000000827014446, 21.000000648200512, 21.000000648200512, 0.07999999821186066);
 	width: 250px;
