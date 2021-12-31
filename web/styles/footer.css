@@ -14,3 +14,25 @@ footer p {
 footer p a {
     font-weight: bold;
 }
+
+a.github-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    background: rgba(18, 21, 21, 0.48);
+    border-radius: 100%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 32px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 4px 8px 20px 0 rgba(17, 20, 20, 0.14);
+}
