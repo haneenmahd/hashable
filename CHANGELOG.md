@@ -1,3 +1,12 @@
+# v1.0.0
+
+Features:
+
+Bug Fixes:
+- [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground
+- [#8](https://github.com/haneenmahd/hashable/issues/8) Fix SEO and splitbee analytics.
+- [#6](https://github.com/haneenmahd/hashable/issues/6) UI is not responsive when switching tabs in /api.
+
 # Beta v1.0.0 🚀
 
 Features:
