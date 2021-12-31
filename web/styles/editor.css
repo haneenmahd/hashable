@@ -37,12 +37,18 @@ div.editor-card {
     padding: 43px;
 
     width: 30vw;
-    height: 456px;
+    min-height: 456px;
 
     background: #FFFFFF;
     box-shadow: 0px -19px 21px rgba(0, 0, 0, 0.04), 0px 19px 21px rgba(0, 0, 0, 0.09);
     border-radius: 35px;
     margin: 20px 10px;
+}
+
+@media screen and (max-width: 920px) {
+    div.editor-card {
+        width: 40vw;
+    }
 }
 
 div.editor-card div {
