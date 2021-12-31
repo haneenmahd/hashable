@@ -28,7 +28,7 @@ nav#main-nav a {
     transition: 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     nav#main-nav {
         min-height: 40px;
         left: 50%;
