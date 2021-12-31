@@ -1,9 +1,4 @@
 const openUpLastProjectButton = document.getElementById("open-last-project");
-const openDocumentationButton = document.getElementById("github-docs");
-
-function openGitHubDocs() {
-  open("https://github.com/haneenmahd/hashable#readme");
-}
 
 function openLastProject() {
   window.location.pathname = "/pages/playground.html";
@@ -29,8 +24,4 @@ window.onload = () => {
 
 openUpLastProjectButton.onclick = () => {
   openLastProject();
-};
-
-openDocumentationButton.onclick = () => {
-  openGitHubDocs();
 };
