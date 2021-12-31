@@ -22,6 +22,31 @@ a {
   color: inherit;
 }
 
+a.button-like {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+  background: rgba(18, 21, 21, 0.48);
+  border-radius: 29px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 32px;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a.button-like svg {
+  margin: 0 10px;
+}
+
 input {
   border: none;
   outline: none;
