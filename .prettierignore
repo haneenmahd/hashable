@@ -1,0 +1,7 @@
+# Ignore Artifacts
+build
+dist
+node_modules
+docs
+scripts
+examples

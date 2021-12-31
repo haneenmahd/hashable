@@ -2,21 +2,21 @@
 import { Algorithm, Encoding } from "../src/types";
 
 export function convertAlgo(algorithm: string): Algorithm {
-    const algo = algorithm;
+  const algo = algorithm;
 
-    switch (algo) {
-        case "sha256":
-            return Algorithm.SHA256;
+  switch (algo) {
+    case "sha256":
+      return Algorithm.SHA256;
 
-        case "sha512":
-            return Algorithm.SHA512;
+    case "sha512":
+      return Algorithm.SHA512;
 
-        case "md5":
-            return Algorithm.MD5;
-    
-        default:
-            return Algorithm.SHA256;
-    }
+    case "md5":
+      return Algorithm.MD5;
+
+    default:
+      return Algorithm.SHA256;
+  }
 }
 
 export function convertEncoding(encoding: string): Encoding {

@@ -1,11 +1,13 @@
 # v1.0.0 (upcoming) 👋
 
 Features:
+
 - Get the sample code of the request function in javascript.
 - Now the editor loads faster than before.
 - Better UI 😊
 
 Bug Fixes:
+
 - [#14](https://github.com/haneenmahd/hashable/issues/14) Low Perfomance of the website.
 - [#11](https://github.com/haneenmahd/hashable/issues/11) Too much loading time for playground
 - [#8](https://github.com/haneenmahd/hashable/issues/8) Fix SEO and splitbee analytics.

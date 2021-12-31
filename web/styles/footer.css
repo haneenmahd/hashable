@@ -1,38 +1,38 @@
 footer {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer p {
-    margin: 4px 0;
+  margin: 4px 0;
 }
 
 footer p a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a.github-link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 21px;
-    background: rgba(18, 21, 21, 0.48);
-    border-radius: 100%;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 32px;
-    border: none;
-    outline: none;
-    font-size: 100%;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .3s;
-    box-shadow: 4px 8px 20px 0 rgba(17, 20, 20, 0.14);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+  background: rgba(18, 21, 21, 0.48);
+  border-radius: 100%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 32px;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 4px 8px 20px 0 rgba(17, 20, 20, 0.14);
 }

@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/haneenmahd/hashable/issues"
   },
-  "homepage": "https://github.com/haneenmahd/hashable#readme"
+  "homepage": "https://github.com/haneenmahd/hashable#readme",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
 }

@@ -19,7 +19,7 @@ const PORT: string | number = process.env.PORT || 3000;
 // allowing all origings
 const corsOptions: cors.CorsOptions = {
   origin: "*",
-  methods: ["GET"]
+  methods: ["GET"],
 };
 
 app.use(cors(corsOptions));
@@ -39,25 +39,25 @@ app.use("/api/hmac", (req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-    res.send("Listening and watching out for crypto functions 👀");
+  res.send("Listening and watching out for crypto functions 👀");
 });
 
 app.get("/api/ping-count", (req, res) => {
   const response = {
-    count: getCount()
+    count: getCount(),
   };
 
   res.end(JSON.stringify(response));
 });
 
 app.get("/api/hash", (req, res) => {
-    const reqObj: Request = {
-      algorithm: convertAlgo(String(req.query.algorithm)),
-      str: String(req.query.str),
-      encoding: convertEncoding(String(req.query.encoding)),
-    };
+  const reqObj: Request = {
+    algorithm: convertAlgo(String(req.query.algorithm)),
+    str: String(req.query.str),
+    encoding: convertEncoding(String(req.query.encoding)),
+  };
 
-    res.end(hash(reqObj));
+  res.end(hash(reqObj));
 });
 
 app.get("/api/hmac", (req, res) => {
@@ -65,7 +65,7 @@ app.get("/api/hmac", (req, res) => {
     algorithm: convertAlgo(String(req.query.algorithm)),
     str: String(req.query.str),
     encoding: convertEncoding(String(req.query.encoding)),
-    key: String(req.query.key)
+    key: String(req.query.key),
   };
 
   res.end(hmac(reqObj));

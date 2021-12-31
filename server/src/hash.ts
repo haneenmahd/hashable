@@ -37,14 +37,15 @@ function getEncoding(encoding: Encoding): BinaryToTextEncoding {
   }
 }
 
-export default function hash(
-  req: Request
-) {
+export default function hash(req: Request) {
   // retrieving values from enums
   const algorithmType = getAlgorithmType(req.algorithm);
   const encodingType: BinaryToTextEncoding = getEncoding(req.encoding);
 
-  const hash = crypto.createHash(algorithmType).update(req.str).digest(encodingType);
+  const hash = crypto
+    .createHash(algorithmType)
+    .update(req.str)
+    .digest(encodingType);
 
   return hash;
 }
