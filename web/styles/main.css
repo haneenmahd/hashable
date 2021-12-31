@@ -47,19 +47,21 @@ main img.illustration-img {
 
 @media screen and (max-width: 600px) {
     main div.main-header h1 {
-        font-size: 250%;
-        padding: 20px;
+        font-size: 200%;
+        width: 100%;
         margin: 4px 0;
     }
 
     main div.main-header h3 {
-        font-size: 120%;
+        font-size: 100%;
         margin: 4px 0;
     }
 
     main div.actions-group {
         width: 85vw;
         padding: 0 20%;
+        margin: 10px 0;
+        margin-bottom: 30px;
     }
 
     main div.actions-group button {
