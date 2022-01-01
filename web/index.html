@@ -24,6 +24,7 @@
       type="image/x-icon"
     />
     <link hreflang="en-us" rel="stylesheet" href="./styles/styles.css" />
+    <link hreflang="en-us" rel="stylesheet" href="./styles/commons.css" />
     <link hreflang="en-us" rel="stylesheet" href="./styles/nav.css" />
     <link hreflang="en-us" rel="stylesheet" href="./styles/main.css" />
     <link hreflang="en-us" rel="stylesheet" href="./styles/footer.css" />
@@ -84,6 +85,10 @@
       >
     </nav>
 
+    <div id="toast" class="toast">
+      <p id="toast-message">ASA</p>
+    </div>
+
     <main>
       <img
         layout="responsive"
@@ -121,6 +126,12 @@
         class="github-link"
         ><i data-feather="github"></i
       ></a>
+
+      <button id="local-storage-clear-button">
+        <i data-feather="x-circle"></i>
+        Clear Local storage
+      </button>
+      
     </footer>
 
     <script defer src="./scripts/index.js"></script>

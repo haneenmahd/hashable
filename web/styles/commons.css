@@ -76,3 +76,19 @@ button.small {
 button.full-width {
   width: 100%;
 }
+
+div.toast {
+  position: fixed;
+  top: 5%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #121515;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 4px 8px 20px 0 #c4c4c4aa;
+  z-index: 200;
+}
