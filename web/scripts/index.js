@@ -1,4 +1,17 @@
 const openUpLastProjectButton = document.getElementById("open-last-project");
+const localStorageClearButton = document.getElementById("local-storage-clear-button");
+
+function handleToast(message) {
+  const toast = document.getElementById("toast");
+  const toastMessage = document.getElementById("toast-message");
+
+  toast.style.display = "flex";
+  toastMessage.innerText = "Successfully " + message;
+
+  setTimeout(async () => {
+    toast.style.display = "none";
+  }, 2000);
+}
 
 function openLastProject() {
   window.location.pathname = "/pages/playground.html";
@@ -20,7 +33,7 @@ function getServerPingedCount() {
 
 /**
  * Clears the Local Storage of the page
- * ⚠️ warning: use this with caution.
+ * ⚠️ warning: use this with caution. This can cause to delete user data stored inside the browser.
  * This can only be executed when the user asks for it.
  */
 // eslint-disable-next-line no-unused-vars
@@ -34,4 +47,9 @@ window.onload = () => {
 
 openUpLastProjectButton.onclick = () => {
   openLastProject();
+};
+
+localStorageClearButton.onclick = () => {
+  clearLocalStorage();
+  handleToast("Cleared ✅");
 };
