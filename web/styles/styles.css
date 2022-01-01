@@ -43,16 +43,17 @@ a.button-like {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 21px;
+  max-width: 200px;
+  padding: 5%;
   background: rgba(18, 21, 21, 0.48);
   border-radius: 29px;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 32px;
+  margin: 0px 10%;
   border: none;
   outline: none;
-  font-size: 100%;
+  font-size: 90%;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -61,6 +62,13 @@ a.button-like {
 
 a.button-like svg {
   margin: 0 10px;
+}
+
+/* Only for very small device */
+@media screen and (max-width: 400px) {
+  a.button-like svg {
+    display: none;
+  }
 }
 
 input {
@@ -77,53 +85,4 @@ input {
 
 input:focus {
   background: #e5ebeb;
-}
-
-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 21px;
-  background: rgba(18, 21, 21, 0.48);
-  border-radius: 29px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 32px;
-  border: none;
-  outline: none;
-  font-size: 100%;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: rgba(18, 21, 21, 0.543);
-}
-
-button svg {
-  height: 16px;
-  width: 16px;
-  margin: 0 6px;
-}
-
-button.main {
-  background: #121515;
-  font-weight: 700;
-}
-
-button.main:hover {
-  background: #262b2b;
-}
-
-button.small {
-  padding: 10px;
-  margin: 10px 0;
-}
-
-button.full-width {
-  width: 100%;
 }
