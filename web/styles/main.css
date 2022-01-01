@@ -38,6 +38,7 @@ main div.actions-group {
   align-items: center;
   margin: 10px 0;
   margin-bottom: 50px;
+  width: fit-content;
 }
 
 main img.illustration-img {
