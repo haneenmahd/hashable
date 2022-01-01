@@ -19,6 +19,9 @@ Bug Fixes:
 - [#6](https://github.com/haneenmahd/hashable/issues/6) UI is not responsive when switching tabs in /api.
 - [#7](https://github.com/haneenmahd/hashable/issues/7) get the request sample code in playground.
 
+This bugs are build related ones:
+- [#24](https://github.com/haneenmahd/hashable/issues/24) Test Workflow error
+
 # Beta v1.0.0 🚀
 
 Features:
