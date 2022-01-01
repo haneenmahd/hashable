@@ -23,6 +23,7 @@ function getServerPingedCount() {
  * ⚠️ warning: use this with caution.
  * This can only be executed when the user asks for it.
  */
+// eslint-disable-next-line no-unused-vars
 function clearLocalStorage() {
   localStorage.clear();
 }
