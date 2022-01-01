@@ -28,5 +28,5 @@ submitButton.onclick = () => {
 window.onload = () => {
     setTimeout(() => {
         loadLastSaved();
-    }, 1000);
+    }, 300);
 };
