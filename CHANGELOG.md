@@ -5,9 +5,11 @@ Features:
 - Get the sample code of the request function in javascript.
 - Now the editor loads faster than before.
 - Better UI and UX 😊
+- Clear your playground data 🆑
 
 Bug Fixes:
 
+- [#17](https://github.com/haneenmahd/hashable/issues/17) Settings to clear local storage data.
 - [#18](https://github.com/haneenmahd/hashable/issues/18) Fix UX Design.
 - [#19](https://github.com/haneenmahd/hashable/issues/19) The Sample Code is making the UI Overflow.
 - [#14](https://github.com/haneenmahd/hashable/issues/14) Low Perfomance of the website.
