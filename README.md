@@ -47,6 +47,14 @@ Get more examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master
 </p>
 
 <h2>
+Sponsors
+</h2>
+<p>
+Does your company or your project use `Hashable`?
+Sponsor us so that can we can release bug-free, feature-rich versions of `hashable` 😊.
+</p>
+
+<h2>
 Building our Project 🏗
 </h2>
 <p>
