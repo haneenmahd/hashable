@@ -3,6 +3,9 @@
   </h1>
   <img src="https://github.com/haneenmahd/hashable/actions/workflows/build-server.yml/badge.svg" alt="Build Server Status Badge" />
   <img src="https://github.com/haneenmahd/hashable/actions/workflows/test-server.yml/badge.svg" alt="Test Server Badge" />
+  <img src="https://badgen.net/github/release/haneenmahd/hashable" alt="Hashable Latest Release" />
+  <img src="https://badgen.net/github/last-commit/haneenmahd/hashable" alt="Hashable Latest Release" />
+  <img src="https://badgen.net/github/license/haneenmahd/hashable" alt="Hashable Latest Release" />
 
   <p>A Client-Side Gateway for users to interact with cryptography 🤩</p>
   <i>We also have a REST API for in use with Client-Side Applications.</i>
