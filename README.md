@@ -15,5 +15,39 @@
 We also support a REST API which users can use to hash strings in their own website on client-side Javascript Applications.</p>
 
 <h2>
- REST APi
+ REST API 🛠
 </h2>
+<p>
+Our Rest API is a simple implementation of generating hashes through a get request.
+
+Here is on example using **Javascript**, which represents a simple program that hashes a string in sha256.
+```js
+const axios = require("axios");
+
+const reqUrl = "https://hashable-server.herokuapp.com";
+
+// string going to be hashed
+const str = "HelloWorld";
+// hashing method, see more details on /server directory.
+const method = "sha256";
+// encoding method
+const encoding = "hex";
+
+axios.get(`${reqUrl}/api/hash?algorithm=${method}&str=${str}&encoding=${encoding}`)
+.then(res => res.data)
+.catch(err => console.log(err));
+```
+
+See more about our server documentation at [`server`](https://github.com/haneenmahd/hashable/tree/master/server)
+</p>
+
+<h2>
+Contact
+</h2>
+
+<h2>
+License 📑
+</h2>
+<p>
+We have licensed this project under <b>MIT</b>.
+</p>
