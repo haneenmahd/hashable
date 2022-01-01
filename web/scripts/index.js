@@ -18,6 +18,15 @@ function getServerPingedCount() {
     });
 }
 
+/**
+ * Clears the Local Storage of the page
+ * ⚠️ warning: use this with caution.
+ * This can only be executed when the user asks for it.
+ */
+function clearLocalStorage() {
+  localStorage.clear();
+}
+
 window.onload = () => {
   getServerPingedCount();
 };
