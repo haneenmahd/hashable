@@ -4,7 +4,8 @@
   "description": "The Main Entry to Hashable CodeBase",
   "main": "server/src/index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
