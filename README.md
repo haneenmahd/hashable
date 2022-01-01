@@ -122,6 +122,17 @@ cd server
 npm run clean
 ```
 
+Running server tests
+```sh
+npm run test
+```
+
+Linting Code inside web
+```sh
+cd web
+npm run lint
+```
+
 <h2>
 Contact💬
 </h2>
