@@ -9,6 +9,7 @@ Features:
 
 Bug Fixes:
 
+- [#22](https://github.com/haneenmahd/hashable/issues/20) Action Buttons UI Overflow.
 - [#17](https://github.com/haneenmahd/hashable/issues/17) Settings to clear local storage data.
 - [#18](https://github.com/haneenmahd/hashable/issues/18) Fix UX Design.
 - [#19](https://github.com/haneenmahd/hashable/issues/19) The Sample Code is making the UI Overflow.
