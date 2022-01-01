@@ -47,6 +47,68 @@ Get more examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master
 </p>
 
 <h2>
+Building our Project 🏗
+</h2>
+<p>
+Building our project is not a big work! It is simple and easy. But there are some steps you need to follow first.
+
+First of all, we recommend having Node.js of version 14 or higher.
+Download Node.js <a target="_blank" href="https://nodejs.org/en/download/">Here 📑</a>
+</p>
+
+- Node.js
+- Typescript (using [npm](https://npmjs.org))
+- Git
+
+Clone the repo using `Git`:
+```sh
+git clone https://github.com/haneenmahd/hashable.git
+```
+
+Create and set a branch name:
+```sh
+git branch <your-branch-name>
+git checkout <your-branch-name>
+```
+
+Install missing Packages 📦
+```sh
+sh scripts/install.sh
+```
+
+Continue Working on your PR 💪🏻.
+
+Run this script inorder to build the server:
+```sh
+cd server
+npm run build
+```
+
+Linting our server code:
+```sh
+cd server
+npm run lint
+```
+
+Starting and running our server:
+> NOTE: this only starts the server if the code is build using Typescript Compiler`(tsc)`
+```sh
+cd server
+npm run start
+```
+If you wanna build and start the server, run this instead:
+```sh
+cd server
+npm run build:start
+```
+
+Cleaning build output:
+```sh
+cd server
+npm run clean
+```
+
+<h2>
 Contact
 </h2>
 <p>
@@ -58,12 +120,4 @@ License 📑
 </h2>
 <p>
 We have licensed this project under <b>MIT</b>.
-</p>
-
-<h2>
-Building our Server
-</h2>
-<p>
-First of all, we recommend having Node.js of version 14 or higher.
-Download Node.js <a target="_blank" href="https://nodejs.org/en/download/">Here 📑</a>
 </p>
