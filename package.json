@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/haneenmahd/hashable#readme",
   "devDependencies": {
+    "jest": "^27.4.5",
     "prettier": "2.5.1"
   }
 }
