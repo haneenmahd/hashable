@@ -42,7 +42,13 @@ axios
 
 See more about our server documentation at [`server`](https://github.com/haneenmahd/hashable/tree/master/server)
 
-Get more examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master/examples).
+Get Examples for:
+- [Ruby 💎](https://github.com/haneenmahd/hashable/tree/master/examples/ruby)
+- [Swift 🦅](https://github.com/haneenmahd/hashable/tree/master/examples/swift)
+- [ReactJS 😅](https://github.com/haneenmahd/hashable/tree/master/examples/react-js)
+- [VanillaJS](https://github.com/haneenmahd/hashable/tree/master/examples/client-side-js)
+
+Get complete examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master/examples).
 
 </p>
 
