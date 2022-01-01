@@ -49,10 +49,21 @@ Get more examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master
 <h2>
 Contact
 </h2>
+<p>
+You can contact the Developer on Twitter <a target="_blank" href="https://twitter.com/HaneenMahdin">@HaneenMahdin🐥</a>
+</p>
 
 <h2>
 License 📑
 </h2>
 <p>
 We have licensed this project under <b>MIT</b>.
+</p>
+
+<h2>
+Building our Server
+</h2>
+<p>
+First of all, we recommend having Node.js of version 14 or higher.
+Download Node.js <a target="_blank" href="https://nodejs.org/en/download/">Here 📑</a>
 </p>
