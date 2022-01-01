@@ -6,7 +6,7 @@ function handleToast(message) {
   const toastMessage = document.getElementById("toast-message");
 
   toast.style.display = "flex";
-  toastMessage.innerText = "Successfully " + message;
+  toastMessage.innerHTML = "Successfully " + message;
 
   setTimeout(async () => {
     toast.style.display = "none";
@@ -51,5 +51,5 @@ openUpLastProjectButton.onclick = () => {
 
 localStorageClearButton.onclick = () => {
   clearLocalStorage();
-  handleToast("Cleared ✅");
+  handleToast("Cleared <i data-feather='check'></i>");
 };
