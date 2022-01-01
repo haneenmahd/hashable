@@ -47,7 +47,7 @@ Get more examples [here 🙄](https://github.com/haneenmahd/hashable/tree/master
 </p>
 
 <h2>
-Sponsors
+Sponsors ❤️
 </h2>
 <p>
 Does your company or your project use `Hashable`?
@@ -117,7 +117,7 @@ npm run clean
 ```
 
 <h2>
-Contact
+Contact💬
 </h2>
 <p>
 You can contact the Developer on Twitter <a target="_blank" href="https://twitter.com/HaneenMahdin">@HaneenMahdin🐥</a>
