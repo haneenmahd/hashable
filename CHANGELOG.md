@@ -1,4 +1,4 @@
-# v1.1.0 (upcoming) 👊
+# v1.1.0 👊
 
 Features:
 - Get more info on the HomePage
