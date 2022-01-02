@@ -184,3 +184,11 @@ code.design {
   overflow-wrap: break-word;
   transition: 0.3s;
 }
+
+span.seperator {
+  height: 3px;
+  width: 90%;
+  background: #c4c4c4aa;
+  border-radius: 100px;
+  margin: 30px 0;
+}
