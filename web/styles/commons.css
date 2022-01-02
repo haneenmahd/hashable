@@ -164,3 +164,22 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
+
+code {
+  background: var(--backup-color);
+  color: var(--darker-main-color);
+  padding: 3px;
+  margin: 2px;
+}
+
+code.design {
+  min-height: 100px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: var(--backup-color);
+  color: #fff;
+  margin: 20px 0;
+  padding: 30px;
+  overflow-wrap: break-word;
+  transition: 0.3s;
+}

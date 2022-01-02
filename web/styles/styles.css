@@ -117,6 +117,12 @@ div.setup > * h1:hover {
   color: var(--darker-main-color);
 }
 
+div.setup p div {
+  display: flex;
+  padding: 20px;
+  animation: fade-in-text 1.7s ease-in-out;
+}
+
 div.setup > * *:hover {
   color: var(--darker-secondary-color);
 }
