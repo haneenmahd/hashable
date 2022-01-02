@@ -1,3 +1,8 @@
+# v1.1.2 🧐:
+Bug Fixes
+
+- Fixed UI overflow in `/pages/api`.
+
 # v1.1.1 🤐
 
 Features:
