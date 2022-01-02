@@ -83,8 +83,8 @@
       >
       <a
         target="_blank"
-        href="https://github.com/haneenmahd/hashable/releases/beta-v1.0.0"
-        >Beta v1.0.0 🚀</a
+        href="https://github.com/haneenmahd/hashable/releases/v1.1.1"
+        >v1.1.1 🚀</a
       >
     </nav>
     <!--<h1>
@@ -103,72 +103,86 @@
       <p>
         Hashable server is hosted on heroku at the domain:
         <a target="_blank" href="https://hashable-server.herokuapp.com."
-          >https://hashable-server.herokuapp.com.</a>
+          >https://hashable-server.herokuapp.com.</a
+        >
       </p>
-    <p>We allow any Cross-Origin to access our server, thus getting rid of <b>TOKEN API ACCESS.</b></p>
-    <br />
-    <h2>Usage</h2>
-    <p>These are the available API routes of the server.</p>
-    <ul>
-      <li><b>/:</b> HomePage: Displaying a simple Text Message</li>
-      <li>
-        <b>/api/hash:</b> This is the route to hash strings based on queries. It
-        accepts three query paramteres.
-        <br />
-        <ul>
-          <li>
-            algorithm: The algorithm that should be used to hash the string.
-          </li>
+      <p>
+        We allow any Cross-Origin to access our server, thus getting rid of
+        <b>TOKEN API ACCESS.</b>
+      </p>
+      <br />
+      <h2>Usage</h2>
+      <p>These are the available API routes of the server.</p>
+      <ul>
+        <li><b>/:</b> HomePage: Displaying a simple Text Message</li>
+        <li>
+          <b>/api/hash:</b> This is the route to hash strings based on queries.
+          It accepts three query paramteres.
+          <br />
           <ul>
-            <h3>Supported algorithms are:</h3>
-            <li>SHA256</li>
-            <li>SHA512</li>
-            <li>MD5</li>
+            <li>
+              algorithm: The algorithm that should be used to hash the string.
+            </li>
+            <ul>
+              <h3>Supported algorithms are:</h3>
+              <li>SHA256</li>
+              <li>SHA512</li>
+              <li>MD5</li>
+            </ul>
+            <li>str: The string that should be hashed.</li>
+            <li>encoding: The type of encoding.</li>
+            <ul>
+              <h3>Supported encodings are:</h3>
+              <li>HEX</li>
+              <li>BASE64</li>
+              <li>BASE64URL</li>
+            </ul>
           </ul>
-          <li>str: The string that should be hashed.</li>
-          <li>encoding: The type of encoding.</li>
-          <ul>
-            <h3>Supported encodings are:</h3>
-            <li>HEX</li>
-            <li>BASE64</li>
-            <li>BASE64URL</li>
-          </ul>
-        </ul>
-      </li>
+        </li>
 
-      <li>
-        <b>/api/hmac:</b> This is the route to hash your strings in hmac way based on queries. It accepts four query paramteres.
-        <br />
-        <ul>
-          <li>
-            algorithm: The algorithm that should be used to hash the string.
-          </li>
+        <li>
+          <b>/api/hmac:</b> This is the route to hash your strings in hmac way
+          based on queries. It accepts four query paramteres.
+          <br />
           <ul>
-            <h3>Supported algorithms are:</h3>
-            <li>SHA256</li>
-            <li>SHA512</li>
-            <li>MD5</li>
+            <li>
+              algorithm: The algorithm that should be used to hash the string.
+            </li>
+            <ul>
+              <h3>Supported algorithms are:</h3>
+              <li>SHA256</li>
+              <li>SHA512</li>
+              <li>MD5</li>
+            </ul>
+            <li>str: The string that should be hashed.</li>
+            <li>encoding: The type of encoding.</li>
+            <ul>
+              <h3>Supported encodings are:</h3>
+              <li>HEX</li>
+              <li>BASE64</li>
+              <li>BASE64URL</li>
+            </ul>
+            <li>key: The secret key</li>
           </ul>
-          <li>str: The string that should be hashed.</li>
-          <li>encoding: The type of encoding.</li>
-          <ul>
-            <h3>Supported encodings are:</h3>
-            <li>HEX</li>
-            <li>BASE64</li>
-            <li>BASE64URL</li>
-          </ul>
-          <li>key: The secret key</li>
-        </ul>
-      </li>
-    </ul>
+        </li>
+      </ul>
 
-    <a href="https://github.com/haneenmahd/hashable/edit/master/server/README.md">Edit this page on GitHub<i data-feather="edit-2"></i></a>
+      <a
+        href="https://github.com/haneenmahd/hashable/edit/master/server/README.md"
+        >Edit this page on GitHub<i data-feather="edit-2"></i
+      ></a>
     </div>
 
     <div class="acknowledgement">
       <h2>These services are publicly available for free 😊</h2>
       <p>Exclaimer, <b>DO NOT USE THIS FOR BAD PURPOSES</b></p>
-      <p class="security-mail">For security issues, please text me on Twitter at <a target="_blank" href="https://twitter.com/HaneenMahdin">@HaneenMahdin</a> ✉️.</p>
+      <p class="security-mail">
+        For security issues, please text me on Twitter at
+        <a target="_blank" href="https://twitter.com/HaneenMahdin"
+          >@HaneenMahdin</a
+        >
+        ✉️.
+      </p>
     </div>
 
     <script defer src="../../scripts/api/index.js"></script>
