@@ -7,6 +7,7 @@ Features:
 
 Bug Fixes:
 
+- [#32](https://github.com/haneenmahd/hashable/issues/31) Icon not rendered
 - [#31](https://github.com/haneenmahd/hashable/issues/31) SEO perfomance
 
 # v1.1.0 👊
