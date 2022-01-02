@@ -1,4 +1,17 @@
-# v1.0.0 (upcoming) 👋
+# v1.1.0 (upcoming) 👊
+
+Features:
+- Get more info on the HomePage
+- New look 👀
+
+Bug Fixes:
+- [#30](https://github.com/haneenmahd/hashable/issues/30) Zoom ON IOS while input focus
+- [#29](https://github.com/haneenmahd/hashable/issues/29) Update fonts
+
+PR's:
+- [#28](https://github.com/haneenmahd/hashable/issues/28) Minor Updates for a Better Sites
+
+# v1.0.0 👋
 
 Features:
 
