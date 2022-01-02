@@ -11,18 +11,16 @@ h1 {
   font-size: 150%;
   text-align: center;
   padding: 1% 4%;
-  width: 100%;
+  width: 65%;
   margin: 8px;
+  color: var(--main-header-color);
 }
 
 h3 {
   margin: 0px;
   color: #616f6f;
   font-weight: normal;
-}
-
-h3 a {
-  color: #166edc;
+  color: var(--secondary-header-color);
 }
 
 @media screen and (max-width: 600px) {
@@ -31,5 +29,9 @@ h3 a {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+  }
+
+  h1 {
+    width: 100%;
   }
 }
