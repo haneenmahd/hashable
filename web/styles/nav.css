@@ -36,7 +36,7 @@ nav#main-nav a {
   transition: 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   nav#main-nav {
     min-height: 40px;
     left: 50%;
@@ -61,12 +61,12 @@ nav#main-nav a svg {
 }
 
 nav#main-nav a:hover {
-  background: #12151550;
-  color: #121515;
+  color: var(--main-header-color);
+  background: var(--paragraph-color);
 }
 
 nav#main-nav a.active {
-  background: #121515;
+  background: var(--main-header-color);
   box-shadow: 0px 4px 11px 2px rgba(18, 21, 21, 0.15);
   border-radius: 29px;
   color: #fff;

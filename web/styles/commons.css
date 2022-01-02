@@ -11,11 +11,22 @@
   --secondary-header-color: #7B8CAE;
   --link-color: #1E345E;
   --paragraph-color: #B0B5BF;
+  --darker-main-color: #2d3080;
+  --darker-secondary-color: #55627b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-header-color);
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--link-color);
 }
 
 input {
@@ -39,9 +50,9 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 200px;
+  max-width: 250px;
   padding: 5%;
-  background: rgba(18, 21, 21, 0.48);
+  background: var(--secondary-header-color);
   border-radius: 29px;
   flex: none;
   order: 1;
@@ -67,12 +78,12 @@ button svg {
 }
 
 button.main {
-  background: #121515;
+  background: var(--main-header-color);
   font-weight: 700;
 }
 
 button.main:hover {
-  background: #262b2b;
+  background: var(--darker-main-color);
 }
 
 button.small {
@@ -91,11 +102,41 @@ div.toast {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  color: #121515;
+  color: var(--paragraph-color);
   font-weight: bold;
   font-size: 100%;
   padding: 20px 40px;
   border-radius: 20px;
   box-shadow: 4px 8px 20px 0 #c4c4c4aa;
   z-index: 200;
+}
+
+a.button-like {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  padding: 5%;
+  background: var(--secondary-header-color);
+  border-radius: 29px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10%;
+  border: none;
+  outline: none;
+  font-size: 90%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a.button-like:hover {
+  background: var(--darker-secondary-color);
+}
+
+a.button-like svg {
+  margin: 0 10px;
 }
