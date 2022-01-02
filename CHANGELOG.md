@@ -1,3 +1,11 @@
+# v1.1.1
+
+Features:
+- Faster Loading and better perfomance
+
+Bug Fixes:
+- [#31](https://github.com/haneenmahd/hashable/issues/31) SEO perfomance
+
 # v1.1.0 👊
 
 Features:
