@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   padding: 0;
@@ -7,11 +9,11 @@
 }
 
 :root {
-  --main-header-color: #5E61B0;
-  --secondary-header-color: #7B8CAE;
+  --main-header-color: #5e61b0;
+  --secondary-header-color: #7b8cae;
   --backup-color: #a3a5dd;
-  --link-color: #1E345E;
-  --paragraph-color: #B0B5BF;
+  --link-color: #1e345e;
+  --paragraph-color: #b0b5bf;
   --darker-main-color: #2d3080;
   --darker-secondary-color: #55627b;
 }
@@ -19,7 +21,6 @@
 h1 {
   color: var(--main-header-color);
 }
-
 
 h2,
 h3,
