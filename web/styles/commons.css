@@ -6,6 +6,13 @@
   margin: 0;
 }
 
+:root {
+  --main-header-color: #5E61B0;
+  --secondary-header-color: #7B8CAE;
+  --link-color: #1E345E;
+  --paragraph-color: #B0B5BF;
+}
+
 a {
   text-decoration: none;
   color: inherit;
