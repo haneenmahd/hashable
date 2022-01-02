@@ -1,3 +1,10 @@
+# v1.1.3
+
+Feel the new UI with DM Sans
+
+Bug Fixes:
+- Replaced Poppins font with DM Sans.
+
 # v1.1.2 🧐:
 Bug Fixes
 
