@@ -22,7 +22,7 @@ a.github-link {
   align-items: center;
   padding: 15px;
   background: rgba(18, 21, 21, 0.48);
-  border-radius: 100%;
+  border-radius: 20px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -35,6 +35,14 @@ a.github-link {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 4px 8px 20px 0 rgba(17, 20, 20, 0.14);
+}
+
+a.github-link svg {
+  margin: 0 5px;
+}
+
+a.github-link:hover {
+  background: rgba(39, 45, 45, 0.48);
 }
 
 footer button {
