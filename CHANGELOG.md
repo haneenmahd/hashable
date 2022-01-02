@@ -1,4 +1,4 @@
-# v1.1.3
+# v1.1.3 😉
 
 Feel the new UI with DM Sans
 
