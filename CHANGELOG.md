@@ -1,22 +1,28 @@
-# v1.1.1
+# v1.1.1 🤐
 
 Features:
+
 - Faster Loading and better perfomance
+- Better API Page
 
 Bug Fixes:
+
 - [#31](https://github.com/haneenmahd/hashable/issues/31) SEO perfomance
 
 # v1.1.0 👊
 
 Features:
+
 - Get more info on the HomePage
 - New look 👀
 
 Bug Fixes:
+
 - [#30](https://github.com/haneenmahd/hashable/issues/30) Zoom ON IOS while input focus
 - [#29](https://github.com/haneenmahd/hashable/issues/29) Update fonts
 
 PR's:
+
 - [#28](https://github.com/haneenmahd/hashable/issues/28) Minor Updates for a Better Sites
 
 # v1.0.0 👋
@@ -42,6 +48,7 @@ Bug Fixes:
 - [#7](https://github.com/haneenmahd/hashable/issues/7) get the request sample code in playground.
 
 This bugs are build related ones ⚙️:
+
 - [#24](https://github.com/haneenmahd/hashable/issues/24) Test Workflow error
 
 # Beta v1.0.0 🚀
