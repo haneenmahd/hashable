@@ -13,10 +13,12 @@ button {
   padding: 20px 30px;
 }
 
-button.back-to-home {
+a.back-to-home {
   position: absolute;
   top: 5%;
   left: 0%;
+  padding: 0;
+  cursor: pointer;
   padding: 15px;
 }
 
