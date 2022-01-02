@@ -20,6 +20,18 @@ a, button, img, main {
   }
 }
 
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -53,4 +65,34 @@ input {
 
 input:focus {
   background: #e5ebeb;
+}
+
+div.setup {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10%;
+}
+
+div.setup h1 {
+  font-size: 250%;
+}
+
+div.setup h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+}
+
+div.setup h1 {
+  animation: fade-in-text 0.4s ease-in-out;
+}
+
+div.setup h2 {
+  animation: fade-in-text 0.7s ease-in-out;
+}
+
+div.setup h3 {
+  animation: fade-in-text 0.87s ease-in-out;
+}
+
+div.setup p {
+  animation: fade-in-text 1.1s ease-in-out;
 }

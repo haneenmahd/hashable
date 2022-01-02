@@ -16,13 +16,17 @@
   --darker-secondary-color: #55627b;
 }
 
-h1,
+h1 {
+  color: var(--main-header-color);
+}
+
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--main-header-color);
+  color: var(--secondary-header-color);
 }
 
 a {
@@ -140,4 +144,8 @@ a.button-like:hover {
 
 a.button-like svg {
   margin: 0 10px;
+}
+
+p {
+  color: var(--paragraph-color);
 }

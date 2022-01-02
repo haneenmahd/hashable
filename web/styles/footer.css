@@ -42,3 +42,7 @@ footer button {
   margin-bottom: 24px;
   background-color: rgba(190, 12, 12, 0.48);
 }
+
+footer p:hover {
+  color: var(--darker-secondary-color);
+}

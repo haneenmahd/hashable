@@ -18,9 +18,7 @@ h1 {
 
 h3 {
   margin: 0px;
-  color: #616f6f;
   font-weight: normal;
-  color: var(--secondary-header-color);
 }
 
 @media screen and (max-width: 600px) {
