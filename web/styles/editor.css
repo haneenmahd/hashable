@@ -9,19 +9,14 @@ body {
   padding: 60px 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #121515;
+button {
+  padding: 20px 30px;
 }
 
 button.back-to-home {
   position: absolute;
   top: 5%;
-  left: 2%;
+  left: 0%;
   padding: 15px;
 }
 
@@ -59,6 +54,7 @@ div.editor-card {
 
 div.editor-card div {
   margin: 5px 0;
+  width: 100%;
 }
 
 div p {
@@ -66,10 +62,7 @@ div p {
   margin: 8px 0;
 }
 
-div.editor-card .string {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+div.editor-card div input {
   padding: 0px 21px;
 
   width: 100%;
@@ -154,12 +147,12 @@ div.sample-code code#sample-code-text {
   }
 
   div.editor-card {
-    width: 80vw;
+    width: 90vw;
     padding: 30px;
   }
 
   div.result-card {
-    width: 80vw;
+    width: 90vw;
     padding: 50px;
   }
 }

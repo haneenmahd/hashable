@@ -24,7 +24,15 @@ main div.main-header h1 {
   font-size: 300%;
 }
 
+main div.main-header h2 {
+  font-weight: 600;
+  text-align: center;
+  margin: 8px 0;
+  font-size: 130%;
+}
+
 main div.main-header h3 {
+  width: 50%;
   font-weight: 500;
   color: #3c4444;
   text-align: center;
@@ -38,7 +46,7 @@ main div.actions-group {
   align-items: center;
   margin: 10px 0;
   margin-bottom: 50px;
-  width: fit-content;
+  width: 400px;
 }
 
 main img.illustration-img {
@@ -47,6 +55,10 @@ main img.illustration-img {
 }
 
 @media screen and (max-width: 600px) {
+  main div.main-header {
+    padding: 20px;
+  }
+
   main div.main-header h1 {
     font-size: 200%;
     width: 100%;
@@ -54,13 +66,13 @@ main img.illustration-img {
   }
 
   main div.main-header h3 {
+    width: 100%;
     font-size: 100%;
     margin: 4px 0;
   }
 
   main div.actions-group {
-    width: 85vw;
-    padding: 0 20%;
+    width: 100%;
     margin: 10px 0;
     margin-bottom: 30px;
   }
@@ -72,5 +84,13 @@ main img.illustration-img {
 
   main div.actions-group a svg {
     margin: 0 4px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main div.main-header h3 {
+    width: 90%;
+    font-size: 100%;
+    margin: 4px 0;
   }
 }

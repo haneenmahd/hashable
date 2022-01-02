@@ -51,5 +51,5 @@ openUpLastProjectButton.onclick = () => {
 
 localStorageClearButton.onclick = () => {
   clearLocalStorage();
-  handleToast("Cleared <i data-feather='check'></i>");
+  handleToast("Cleared ✔️");
 };
