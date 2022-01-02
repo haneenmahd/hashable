@@ -150,3 +150,17 @@ a.button-like svg {
 p {
   color: var(--paragraph-color);
 }
+
+ul {
+  list-style: none;
+  padding: 20px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--secondary-header-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
