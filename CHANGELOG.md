@@ -1,3 +1,6 @@
+# v1.1.4
+Fix invalid link to the server
+
 # v1.1.3 😉
 
 Feel the new UI with DM Sans
