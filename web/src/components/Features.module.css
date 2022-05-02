@@ -1,0 +1,29 @@
+.features {
+    text-align: left;
+    padding: 10px 0;
+    max-width: 550px;
+    animation: other-fade-in 1.7s ease-in-out;
+}
+
+.features > * {
+    margin: 20px 0;
+}
+
+.features h2 {
+    color: rgb(50 50 50);
+}
+
+.features button {
+    margin: 0;
+}
+
+.features .description {
+    line-height: 1.8rem;
+}
+
+@keyframes other-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+}

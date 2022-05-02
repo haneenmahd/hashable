@@ -49,6 +49,12 @@ hr {
   border: 0.3px solid rgb(224, 224, 224);
 }
 
+code {
+  background-color: #ebebeb;
+  padding: 2px 5px;
+  border-radius: 30px;
+}
+
 .App {
   min-height: 100vh;
   max-width: 100vw;
@@ -106,7 +112,7 @@ hr {
 }
 
 .App hr {
-  animation: fade-in 1.5s ease-in-out;
+  animation: fade-in 1.1s ease-out;
 }
 
 @keyframes fade-in {

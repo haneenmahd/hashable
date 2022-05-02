@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    align-items: flex-end;
+    min-height: 80px;
+    max-width: 100%;
+    padding-bottom: 5px;
+    overflow: hidden;
+    animation: fade-in 2s ease-in-out;
+}
+
+.footer a {
+    margin-right: 4%;
+    text-decoration: none;
+    color: #7e7e7e;
+    transition: 0.18s ease;
+}
+
+.footer a:hover {
+    color: #555555;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0.35;
+    }
+}
