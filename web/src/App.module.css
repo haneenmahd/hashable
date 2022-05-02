@@ -97,9 +97,12 @@ hr {
   animation: fade-in 1s ease-in-out;
 }
 
+.actions {
+  animation: fade-in 1.3s ease-in-out;
+}
+
 .actions > * {
   margin-right: 8px;
-  animation: fade-in 1.3s ease-in-out;
 }
 
 .App hr {
