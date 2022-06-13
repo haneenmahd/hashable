@@ -9,7 +9,9 @@
 }
 
 .footer a {
-    margin-right: 4%;
+    border-radius: 30px;
+    margin-right: 2.5%;
+    padding: 3px 8px;
     text-decoration: none;
     color: #7e7e7e;
     transition: 0.18s ease;
@@ -17,6 +19,7 @@
 
 .footer a:hover {
     color: #555555;
+    background-color: #c4c4c450;
 }
 
 @keyframes fade-in {

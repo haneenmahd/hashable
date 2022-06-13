@@ -1,20 +1,11 @@
-import styles from "./App.module.css";
-import Features from "./components/Features";
-import Footer from "./components/Footer";
-import Landing from "./components/Landing";
+import { Routes, Route } from "solid-app-router";
 
-function App() {
+import Home from "./Home";
+
+export default function App() {
   return (
-    <div class={styles.App}>
-      <Landing />
-
-      <hr />
-
-      <Features />
-
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
-
-export default App;
