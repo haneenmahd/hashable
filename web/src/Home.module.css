@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --primary-text: #111;
     --secondary-text: rgb(88, 88, 88);
