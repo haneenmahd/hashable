@@ -20,4 +20,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 6.0.2
       - run: sh scripts/build-web.sh
