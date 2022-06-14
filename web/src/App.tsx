@@ -1,23 +1,14 @@
-import { Component, createSignal } from "solid-js";
-import { Card } from "./components/Card";
+import { Route, Routes } from "solid-app-router";
+import { Component } from "solid-js";
+import ErrorPage from "./pages/ErrorPage";
+import Home from "./pages/Home";
 
 const App: Component = () => {
   return (
-    <div>
-      <Card
-        title="Hello, world!"
-        description="The first word a proram writes"
-        actionButtons={[
-          {
-            title: "Hello ✋",
-            primary: true,
-          },
-          {
-            title: "Bye 👋",
-          },
-        ]}
-      />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 };
 
