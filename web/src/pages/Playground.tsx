@@ -79,8 +79,8 @@ const Main: Component<{
     encoding: Accessor<string>;
   };
 }> = ({ options }) => {
-  const [value, setValue] = createSignal("01234567890");
-  const [hash, setHash] = createSignal("0x01234102010101");
+  const [value, setValue] = createSignal("");
+  const [hash, setHash] = createSignal("No hash generated!");
 
   const { algorithm, encoding } = options;
 
