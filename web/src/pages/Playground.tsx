@@ -4,7 +4,10 @@ import { Accordion } from "../components/Accordion";
 import { Button } from "../components/Button";
 import { SidebarElement } from "../components/SidebarElement";
 
-const Sidebar: Component = () => (
+const Sidebar: Component<{
+  setAlgorithm: Setter<string>;
+  setEncoding: Setter<string>;
+}> = ({ setAlgorithm, setEncoding }) => (
   <div class="p-5">
     <div class="min-w-[16rem] h-[90vh] rounded-md ring-1 ring-slate-200 shadow-lg bg-slate-100">
       <div class="py-2">
@@ -12,13 +15,21 @@ const Sidebar: Component = () => (
       </div>
 
       <div class="py-0">
-        <Accordion text="Method" defaultOpen>
+        <Accordion
+          text="Algorithm"
+          defaultOpen
+          onChange={(value) => setAlgorithm(value)}
+        >
           <For each={["SHA256", "SHA512", "MD5"]}>
             {(item) => <span>{item}</span>}
           </For>
         </Accordion>
 
-        <Accordion text="Encoding" defaultOpen>
+        <Accordion
+          text="Encoding"
+          defaultOpen
+          onChange={(value) => setEncoding(value)}
+        >
           <For each={["HEX", "BASE64", "BASE64URL"]}>
             {(item) => <span>{item}</span>}
           </For>
@@ -30,11 +41,15 @@ const Sidebar: Component = () => (
 
 const QuickActions: Component<{
   value: Accessor<string>;
+  options: {
+    algorithm: Accessor<string>;
+    encoding: Accessor<string>;
+  };
   setHash: Setter<string>;
-}> = ({ value, setHash }) => {
+}> = ({ value, options, setHash }) => {
   const fetchHash = async () => {
     const response = await axios.get(
-      `http://localhost:3000/api/hash?algorithm=md5&str=${value()}&encoding=hex`
+      `http://localhost:3000/api/hash?algorithm=${options.algorithm()}&str=${value()}&encoding=${options.encoding()}`
     );
 
     setHash(response.data);
@@ -53,13 +68,24 @@ const QuickActions: Component<{
   );
 };
 
-const Main: Component = () => {
-  const [value, setValue] = createSignal("");
-  const [hash, setHash] = createSignal("01234567890");
+const Main: Component<{
+  options: {
+    algorithm: Accessor<string>;
+    encoding: Accessor<string>;
+  };
+}> = ({ options }) => {
+  const [value, setValue] = createSignal("01234567890");
+  const [hash, setHash] = createSignal("0x01234102010101");
+
+  const { algorithm, encoding } = options;
 
   return (
-    <div class="w-[100%] max-w-[100%] h-[100vh] bg-white p-10 flex flex-col items-center justify-center">
-      <QuickActions value={value} setHash={setHash} />
+    <div class="max-w-[100%] h-[100vh] bg-white flex flex-col items-center justify-center">
+      <QuickActions
+        value={value}
+        options={{ algorithm, encoding }}
+        setHash={setHash}
+      />
 
       <input
         class="w-[100%] my-4 font-semibold text-center text-6xl text-slate-800 outline-none focus:placeholder:text-slate-300"
@@ -68,7 +94,7 @@ const Main: Component = () => {
         onChange={(e) => setValue((e.target as HTMLInputElement).value)}
       />
 
-      <span class="my-4 font-semibold text-center slashed-zero text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
+      <span class="max-w-[50%] truncate my-4 font-semibold text-center slashed-zero text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
         <p>{hash()}</p>
       </span>
     </div>
@@ -76,11 +102,20 @@ const Main: Component = () => {
 };
 
 const Playground: Component = () => {
+  // hashing options passed onto the api
+  const [algorithm, setAlgorithm] = createSignal("md5");
+  const [encoding, setEncoding] = createSignal("hex");
+
   return (
     <div class="flex flex-row items-center">
-      <Sidebar />
+      <Sidebar setAlgorithm={setAlgorithm} setEncoding={setEncoding} />
 
-      <Main />
+      <Main
+        options={{
+          algorithm,
+          encoding,
+        }}
+      />
     </div>
   );
 };
