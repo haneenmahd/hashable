@@ -1,5 +1,6 @@
 import axios from "axios";
-import { Accessor, Component, createSignal, Setter } from "solid-js";
+import { Accessor, Component, createSignal, For, Setter } from "solid-js";
+import { Accordion } from "../components/Accordion";
 import { Button } from "../components/Button";
 import { SidebarElement } from "../components/SidebarElement";
 
@@ -11,9 +12,17 @@ const Sidebar: Component = () => (
       </div>
 
       <div class="py-0">
-        <SidebarElement text="Method" />
+        <Accordion text="Method" defaultOpen>
+          <For each={["SHA256", "SHA512", "MD5"]}>
+            {(item) => <span>{item}</span>}
+          </For>
+        </Accordion>
 
-        <SidebarElement text="Encoding" />
+        <Accordion text="Encoding" defaultOpen>
+          <For each={["HEX", "BASE64", "BASE64URL"]}>
+            {(item) => <span>{item}</span>}
+          </For>
+        </Accordion>
       </div>
     </div>
   </div>
