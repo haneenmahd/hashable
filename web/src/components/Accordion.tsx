@@ -10,7 +10,7 @@ import { ResolvedChildren } from "solid-js/types/reactive/signal";
 
 const AccordionStyles = {
   primary:
-    "text-slate-500 py-1 cursor-pointer hover:text-slate-600 hover:font-medium transition-all",
+    "text-slate-500 py-1 cursor-pointer hover:text-slate-600 transition-colors",
 };
 
 export interface AccordionProps {
