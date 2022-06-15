@@ -8,7 +8,7 @@ const Sidebar: Component<{
   setAlgorithm: Setter<string>;
   setEncoding: Setter<string>;
 }> = ({ setAlgorithm, setEncoding }) => (
-  <div class="p-5">
+  <div class="p-5 z-20">
     <div class="min-w-[16rem] h-[90vh] rounded-md ring-1 ring-slate-200 shadow-lg bg-slate-100">
       <div class="py-2">
         <SidebarElement text="Playground" noBorders />
@@ -20,7 +20,7 @@ const Sidebar: Component<{
           defaultOpen
           onChange={(value) => setAlgorithm(value)}
         >
-          <For each={["SHA256", "SHA512", "MD5"]}>
+          <For each={["sha256", "sha512", "md5"]}>
             {(item) => <span>{item}</span>}
           </For>
         </Accordion>
@@ -30,7 +30,7 @@ const Sidebar: Component<{
           defaultOpen
           onChange={(value) => setEncoding(value)}
         >
-          <For each={["HEX", "BASE64", "BASE64URL"]}>
+          <For each={["hex", "base64", "base64url"]}>
             {(item) => <span>{item}</span>}
           </For>
         </Accordion>
@@ -49,7 +49,11 @@ const QuickActions: Component<{
 }> = ({ value, options, setHash }) => {
   const fetchHash = async () => {
     const response = await axios.get(
-      `http://localhost:3000/api/hash?algorithm=${options.algorithm()}&str=${value()}&encoding=${options.encoding()}`
+      `http://localhost:3000/api/hash?algorithm=${options
+        .algorithm()
+        .toLowerCase()}&str=${value()}&encoding=${options
+        .encoding()
+        .toLowerCase()}`
     );
 
     setHash(response.data);
@@ -80,23 +84,25 @@ const Main: Component<{
   const { algorithm, encoding } = options;
 
   return (
-    <div class="max-w-[100%] h-[100vh] bg-white flex flex-col items-center justify-center">
+    <div class="w-[100%] h-[100vh] bg-white flex flex-col items-center justify-center">
       <QuickActions
         value={value}
         options={{ algorithm, encoding }}
         setHash={setHash}
       />
 
-      <input
-        class="w-[100%] my-4 font-semibold text-center text-6xl text-slate-800 outline-none focus:placeholder:text-slate-300"
-        placeholder="Type string to hash...."
-        value={value()}
-        onChange={(e) => setValue((e.target as HTMLInputElement).value)}
-      />
+      <div class="flex flex-col items-center justify-center">
+        <input
+          class="max-w-[100%] bg-transparent my-4 text-center font-semibold text-6xl text-slate-800 outline-none focus:placeholder:text-slate-300"
+          placeholder="Type string to hash...."
+          value={value()}
+          onChange={(e) => setValue((e.target as HTMLInputElement).value)}
+        />
 
-      <span class="max-w-[50%] truncate my-4 font-semibold text-center slashed-zero text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
-        <p>{hash()}</p>
-      </span>
+        <span class="max-w-[80%] break-all text-center my-4 font-semibold slashed-zero text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
+          <p>{hash()}</p>
+        </span>
+      </div>
     </div>
   );
 };
