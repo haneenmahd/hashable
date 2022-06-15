@@ -40,6 +40,10 @@ export const Accordion: Component<AccordionProps> = ({
     setOpen(!open());
   };
 
+  const handleValueChange = (value: string) => {
+    onChange && onChange(value);
+  };
+
   return (
     <div class="border-b">
       <div
@@ -49,7 +53,14 @@ export const Accordion: Component<AccordionProps> = ({
         {text}
       </div>
 
-      {open() && <div class="flex flex-col px-5 py-2 pl-8">{c()}</div>}
+      {open() && (
+        <div
+          class="flex flex-col px-5 py-2 pl-8"
+          onClick={(e) => handleValueChange(e.target.textContent)}
+        >
+          {c()}
+        </div>
+      )}
     </div>
   );
 };
