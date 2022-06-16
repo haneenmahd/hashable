@@ -2,6 +2,7 @@ import axios from "axios";
 import { Accessor, Component, createSignal, For, Setter } from "solid-js";
 import { Accordion } from "../components/Accordion";
 import { Button } from "../components/Button";
+import Modal from "../components/Modal";
 import { SidebarElement } from "../components/SidebarElement";
 import { toast } from "../components/Toast";
 import copy from "../utils/copy";
@@ -49,6 +50,8 @@ const QuickActions: Component<{
   };
   setHash: Setter<string>;
 }> = ({ value, options, setHash }) => {
+  const [isCodeModalVisible, setCodeModalVisible] = createSignal(false);
+
   const fetchHash = async () => {
     const response = await axios.get(
       `http://localhost:3000/api/hash?algorithm=${options
@@ -68,8 +71,13 @@ const QuickActions: Component<{
       </div>
 
       <div class="mx-1">
-        <Button title="📜 Get code" />
+        <Button title="📜 Get code" action={() => setCodeModalVisible(true)} />
       </div>
+
+      <Modal
+        visible={isCodeModalVisible}
+        setVisibility={setCodeModalVisible}
+      ></Modal>
     </div>
   );
 };
