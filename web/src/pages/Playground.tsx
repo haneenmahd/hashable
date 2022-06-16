@@ -3,6 +3,7 @@ import { Accessor, Component, createSignal, For, Setter } from "solid-js";
 import { Accordion } from "../components/Accordion";
 import { Button } from "../components/Button";
 import { SidebarElement } from "../components/SidebarElement";
+import { toast } from "../components/Toast";
 import copy from "../utils/copy";
 
 const Sidebar: Component<{
@@ -105,7 +106,14 @@ const Main: Component<{
         </span>
       </div>
 
-      <Button title="Copy hash" action={() => copy(hash())} />
+      <Button
+        title="Copy hash"
+        action={() => {
+          copy(hash());
+
+          toast("Text copied to clipboard 📋!");
+        }}
+      />
     </div>
   );
 };
