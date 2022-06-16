@@ -1,5 +1,6 @@
 import { Component } from "solid-js";
 import { Card } from "../components/Card";
+import { toast } from "../components/Toast";
 
 const Home: Component = () => {
   return (
@@ -11,6 +12,9 @@ const Home: Component = () => {
           {
             title: "Hello ✋",
             primary: true,
+            action: () => {
+              toast("Hello world!", 1000);
+            },
           },
           {
             title: "Bye 👋",
