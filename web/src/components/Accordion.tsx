@@ -3,7 +3,6 @@ import {
   Component,
   createEffect,
   createSignal,
-  For,
   JSX,
 } from "solid-js";
 import { ResolvedChildren } from "solid-js/types/reactive/signal";
