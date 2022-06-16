@@ -69,15 +69,6 @@ const QuickActions: Component<{
       <div class="mx-1">
         <Button title="▶️ Run" primary action={fetchHash} />
       </div>
-
-      <div class="mx-1">
-        <Button title="📜 Get code" action={() => setCodeModalVisible(true)} />
-      </div>
-
-      <Modal
-        visible={isCodeModalVisible}
-        setVisibility={setCodeModalVisible}
-      ></Modal>
     </div>
   );
 };
