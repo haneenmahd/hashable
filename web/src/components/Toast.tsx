@@ -14,18 +14,6 @@ export const Toast: Component<ToastProps> = ({
   const [open, setOpen] = createSignal(true);
 
   createEffect(() => {
-    const toastRoot = document.getElementById("toast-root");
-
-    if (!doesElementExist(toastRoot)) {
-      const root = document.createElement("div");
-
-      root.id = "toast-root";
-
-      document.body.appendChild(root);
-    }
-  });
-
-  createEffect(() => {
     setTimeout(() => {
       setOpen(false);
     }, timeout);
