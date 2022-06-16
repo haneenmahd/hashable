@@ -110,7 +110,7 @@ const Main: Component<{
         action={() => {
           copy(hash());
 
-          toast("Text copied to clipboard 📋!");
+          toast("Text copied to clipboard 📋!", 1500);
         }}
       />
     </div>
