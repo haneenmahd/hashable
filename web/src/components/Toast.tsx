@@ -28,7 +28,7 @@ export const Toast: Component<ToastProps> = ({
   return (
     <div
       class={`absolute ${
-        open() ? "top-1" : "-top-8"
+        open() ? "top-2" : "-top-8"
       } left-2/4 px-2 py-1 bg-slate-100 rounded-md text-sm shadow-sm ring-1 ring-slate-300 transition-all`}
     >
       {message}
