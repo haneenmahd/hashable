@@ -10,7 +10,8 @@ import { ResolvedChildren } from "solid-js/types/reactive/signal";
 
 const AccordionStyles = {
   primary:
-    "text-slate-500 py-1 cursor-pointer hover:text-slate-600 transition-colors",
+    "text-slate-500 py-1 cursor-pointer hover:text-slate-600 transition-all",
+  selected: " font-medium text-slate-600",
 };
 
 export interface AccordionProps {
@@ -27,13 +28,18 @@ export const Accordion: Component<AccordionProps> = ({
   children,
 }) => {
   const [open, setOpen] = createSignal(defaultOpen ? true : false);
+  const [value, setValue] = createSignal("");
 
   const c = childRenderer(() => children);
 
   createEffect(() =>
-    (c() as ResolvedChildren[]).forEach(
-      (item: HTMLElement) => (item.className = AccordionStyles.primary)
-    )
+    (c() as ResolvedChildren[]).forEach((item: HTMLElement) => {
+      const itemValue = item.textContent;
+      item.className =
+        itemValue === value()
+          ? AccordionStyles.primary + AccordionStyles.selected
+          : AccordionStyles.primary;
+    })
   );
 
   const handleOpen = () => {
@@ -41,6 +47,8 @@ export const Accordion: Component<AccordionProps> = ({
   };
 
   const handleValueChange = (value: string) => {
+    setValue(value);
+
     onChange && onChange(value);
   };
 
