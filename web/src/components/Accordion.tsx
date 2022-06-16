@@ -16,19 +16,21 @@ const AccordionStyles = {
 
 export interface AccordionProps {
   text: string;
-  onChange?: (value: string) => void;
+  defaultValue?: string;
   defaultOpen?: boolean;
+  onChange?: (value: string) => void;
   children: JSX.Element[] | JSX.Element;
 }
 
 export const Accordion: Component<AccordionProps> = ({
   text,
-  onChange,
+  defaultValue = "",
   defaultOpen,
+  onChange,
   children,
 }) => {
   const [open, setOpen] = createSignal(defaultOpen ? true : false);
-  const [value, setValue] = createSignal("");
+  const [value, setValue] = createSignal(defaultValue);
 
   const c = childRenderer(() => children);
 
