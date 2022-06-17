@@ -29,9 +29,9 @@ app.get("/", (_, res) => {
 
 app.get("/api/hash", (req, res) => {
   const requestBody: Request = {
-    algorithm: convertAlgo(String(req.query.algorithm)),
-    str: String(req.query.str),
-    encoding: convertEncoding(String(req.query.encoding)),
+    algorithm: convertAlgo(req.query.algorithm as string),
+    str: req.query.str as string,
+    encoding: convertEncoding(req.query.encoding as string),
   };
 
   res.end(hash(requestBody));
