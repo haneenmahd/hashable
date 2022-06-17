@@ -5,22 +5,7 @@ import { toast } from "../components/Toast";
 const Home: Component = () => {
   return (
     <div>
-      <Card
-        title="Hello, world!"
-        description="The first word a proram writes"
-        actionButtons={[
-          {
-            title: "Hello ✋",
-            primary: true,
-            action: () => {
-              toast("Hello world!", 1000);
-            },
-          },
-          {
-            title: "Bye 👋",
-          },
-        ]}
-      />
+      <h1>Home page.</h1>
     </div>
   );
 };
