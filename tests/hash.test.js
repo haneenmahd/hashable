@@ -1,16 +1,18 @@
-const { default: serverHash } = require("../server/dist/src/hash");
+const { default: hash } = require("../API/dist/src/hash");
 
 test("Check hash return type: \nalgo: sha512\nstr: HelloWorld\nencoding: hex", () => {
-    expect(typeof serverHash({
-        algorithm: "sha512",
-        str: "HelloWorld",
-        encoding: "hex"
-    })).toBe("string");
+  expect(
+    typeof hash({
+      algorithm: "sha512",
+      str: "HelloWorld",
+      encoding: "hex",
+    })
+  ).toBe("string");
 });
 
 test("Check hash return type: \nalgo: sha256\nstr: HelloWorld\nencoding: hex", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "sha256",
       str: "HelloWorld",
       encoding: "hex",
@@ -20,7 +22,7 @@ test("Check hash return type: \nalgo: sha256\nstr: HelloWorld\nencoding: hex", (
 
 test("Check hash return type: \nalgo: md5\nstr: HelloWorld\nencoding: hex", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "md5",
       str: "HelloWorld",
       encoding: "hex",
@@ -30,7 +32,7 @@ test("Check hash return type: \nalgo: md5\nstr: HelloWorld\nencoding: hex", () =
 
 test("Check hash return type: \nalgo: sha512\nstr: HelloWorld\nencoding: base64", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "sha512",
       str: "HelloWorld",
       encoding: "base64",
@@ -40,7 +42,7 @@ test("Check hash return type: \nalgo: sha512\nstr: HelloWorld\nencoding: base64"
 
 test("Check hash return type: \nalgo: sha256\nstr: HelloWorld\nencoding: base64url", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "sha256",
       str: "HelloWorld",
       encoding: "base64url",
@@ -50,7 +52,7 @@ test("Check hash return type: \nalgo: sha256\nstr: HelloWorld\nencoding: base64u
 
 test("Check hash return type: \nalgo: sha512\nstr: HelloWorld\nencoding: base64", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "sha512",
       str: "HelloWorld",
       encoding: "base64",
@@ -60,7 +62,7 @@ test("Check hash return type: \nalgo: sha512\nstr: HelloWorld\nencoding: base64"
 
 test("Check hash return type: \nalgo: sha256\nstr: HelloWorld\nencoding: base64url", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "sha256",
       str: "HelloWorld",
       encoding: "base64url",
@@ -70,7 +72,7 @@ test("Check hash return type: \nalgo: sha256\nstr: HelloWorld\nencoding: base64u
 
 test("Check hash return type: \nalgo: md5\nstr: HelloWorld\nencoding: base64", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "md5",
       str: "HelloWorld",
       encoding: "base64",
@@ -80,7 +82,7 @@ test("Check hash return type: \nalgo: md5\nstr: HelloWorld\nencoding: base64", (
 
 test("Check hash return type: \nalgo: md5\nstr: HelloWorld\nencoding: base64url", () => {
   expect(
-    typeof serverHash({
+    typeof hash({
       algorithm: "md5",
       str: "HelloWorld",
       encoding: "base64url",

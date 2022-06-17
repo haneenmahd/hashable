@@ -1,4 +1,4 @@
-cd server
+cd api
 
 npm install
 npm run lint
