@@ -1,5 +1,5 @@
 cd web
 
-pnpm install
+pnpm install --frozen-lockfile
 
 pnpm run build
