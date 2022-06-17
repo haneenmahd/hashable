@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-// data types ⦂
+// data types
 import { HmacRequest, Request } from "./src/types";
 
 // utility functions to convert string values to enums
@@ -10,8 +10,6 @@ import { convertAlgo, convertEncoding } from "./utils/convert";
 // cryptographic functions
 import hash from "./src/hash";
 import hmac from "./src/hmac";
-import storeCount from "./utils/storeCount";
-import getCount from "./utils/getCount";
 
 const app = express();
 const PORT: string | number = process.env.PORT || 3000;
@@ -27,27 +25,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/hash", (req, res, next) => {
-  // store the count
-  storeCount();
   next();
 });
 
 app.use("/api/hmac", (req, res, next) => {
-  // store the count
-  storeCount();
   next();
 });
 
 app.get("/", (req, res) => {
   res.send("Listening and watching out for crypto functions 👀");
-});
-
-app.get("/api/ping-count", (req, res) => {
-  const response = {
-    count: getCount(),
-  };
-
-  res.end(JSON.stringify(response));
 });
 
 app.get("/api/hash", (req, res) => {
@@ -71,5 +57,8 @@ app.get("/api/hmac", (req, res) => {
   res.end(hmac(reqObj));
 });
 
-console.log(`Listening and serving on PORT: ${PORT}`);
-app.listen(PORT);
+app.listen(PORT, () => {
+  if (process.env.NODE_ENV !== "production") {
+    console.log(`Listening and serving on PORT: ${PORT}`);
+  }
+});
