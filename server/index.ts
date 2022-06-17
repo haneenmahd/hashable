@@ -27,7 +27,7 @@ app.get("/", (_, res) => {
   res.send("Listening and watching out for crypto functions 👀");
 });
 
-app.get("/api/hash", (req, res) => {
+app.get("/hash", (req, res) => {
   const requestBody: Request = {
     algorithm: convertAlgo(req.query.algorithm as string),
     str: req.query.str as string,
