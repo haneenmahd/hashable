@@ -24,4 +24,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: sh scripts/test-API.sh
+      - run: sh scripts/build-api.sh
+      - run: sh scripts/test-api.sh
