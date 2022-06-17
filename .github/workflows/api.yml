@@ -25,4 +25,3 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: sh scripts/build-api.sh
-      - run: sh scripts/test-api.sh

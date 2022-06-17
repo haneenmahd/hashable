@@ -2,10 +2,9 @@
   "name": "hashable-base",
   "version": "1.0.0",
   "description": "The Main Entry to Hashable CodeBase",
-  "main": "server/src/index.js",
+  "main": "api/src/index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "jest"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,6 @@
   },
   "homepage": "https://github.com/haneenmahd/hashable#readme",
   "devDependencies": {
-    "jest": "^27.4.5",
     "prettier": "2.5.1"
   }
 }
