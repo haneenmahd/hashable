@@ -1,16 +1,16 @@
-## Hashable server
+## Hashable API
 
-Hashable server is hosted on heroku at the domain: https://hashable-server.herokuapp.com.
+Hashable API is hosted on heroku at the domain: https://hashable-server.herokuapp.com.
 
 It is open to public to use.
 
-See usage details [usage](https://github.com/haneenmahd/hashable/tree/master/server#Usage).
+See usage details [usage](https://github.com/haneenmahd/hashable/tree/master/api#Usage).
 
 ### Usage
 
-These are the available routes of the server.
+These are the available routes of the API.
 
-- **"/"** HomePage: Displaying a simple Text Message ![ServerHomePage](https://github.com/haneenmahd/hashable/blob/master/docs/server_home.png)
+- **"/"** HomePage: Displaying a simple Text Message ![APIHomePage](https://github.com/haneenmahd/hashable/blob/master/docs/api_home.png)
 
 - **"/api/hash"**: This is the route to hash strings based on queries. It accepts three query paramteres.
 
