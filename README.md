@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Hashable  <img src="https://github.com/haneenmahd/hashable/blob/master/docs/icon.png" alt="Hashable Icon" height="40px" />
+  <h1>Hashable  <img src="https://github.com/haneenmahd/hashable/blob/master/docs/logo.svg" alt="Hashable Icon" height="40px" />
   </h1>
   <img src="https://github.com/haneenmahd/hashable/actions/workflows/build-server.yml/badge.svg" alt="Build Server Status Badge" />
   <img src="https://github.com/haneenmahd/hashable/actions/workflows/test-server.yml/badge.svg" alt="Test Server Badge" />
@@ -49,6 +49,7 @@ axios
 See more about our API documentation at [`/api`](https://github.com/haneenmahd/hashable/tree/master/api).
 
 Get Examples for:
+
 - [Ruby 💎](https://github.com/haneenmahd/hashable/tree/master/examples/ruby)
 - [Swift 🦅](https://github.com/haneenmahd/hashable/tree/master/examples/swift)
 - [ReactJS 😅](https://github.com/haneenmahd/hashable/tree/master/examples/react-js)
@@ -73,6 +74,7 @@ Follow these steps to build and development our project.
 
 First of all, we recommend having Node.js of version 14 or higher.
 Download Node.js <a target="_blank" href="https://nodejs.org/en/download/">Here 📑</a>
+
 </p>
 
 - Node.js
@@ -80,17 +82,20 @@ Download Node.js <a target="_blank" href="https://nodejs.org/en/download/">Here 
 - Git
 
 Clone the repo using `Git`:
+
 ```sh
 git clone https://github.com/haneenmahd/hashable.git
 ```
 
 Create and set a branch name:
+
 ```sh
 git branch <your-branch-name>
 git checkout <your-branch-name>
 ```
 
 Install Packages 📦
+
 ```sh
 sh scripts/install.sh
 ```
@@ -98,47 +103,55 @@ sh scripts/install.sh
 Continue working with our repo 😄.
 
 For ease of development purposes, you can use this command to open up development server and build according to changes.
+
 ```
 cd api
 npm run dev
 ```
 
 Run this script to build the API:
+
 ```sh
 cd api
 npm run build
 ```
 
 Linting the API's codebase:
+
 ```sh
 cd api
 npm run lint
 ```
 
 If you wanna build and start the server from scratch, run this instead:
+
 ```sh
 cd api
 npm run build:start
 ```
 
 To start the server from the current built folder.
+
 ```sh
 cd api
 npm run start
 ```
 
 Cleaning build files:
+
 ```sh
 cd api
 npm run clean
 ```
 
 Running server tests
+
 ```sh
 npm run test
 ```
 
 Linting Code inside web
+
 ```sh
 cd web
 npm run lint
