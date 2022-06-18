@@ -9,13 +9,13 @@ const SidebarContent: Component<{
   }[];
 }> = ({ title, links }) => (
   <div class="py-5">
-    <h3 class="my-2 text-sm text-slate-800 uppercase font-medium">{title}</h3>
+    <h3 class="my-2 text-sm text-slate-600 uppercase font-medium">{title}</h3>
     <div class="flex flex-col">
       <For each={links}>
         {(link) => (
           <Link
             href={link.link}
-            class="my-2 text-sm text-slate-500 hover:text-slate-700"
+            class="my-2 text-sm text-slate-500 hover:text-slate-600/75"
           >
             {link.title}
           </Link>
@@ -27,27 +27,13 @@ const SidebarContent: Component<{
 
 const Sidebar: Component = () => {
   return (
-    <div class="pt-12 py-8 px-7 min-w-[200px] max-h-[90vh] overflow-scroll">
+    <div class="sticky top-0 pt-12 py-8 px-7 min-w-[200px] max-h-[90vh] overflow-scroll">
       <SidebarContent
         title="Getting Started"
         links={[
           {
-            link: "/docs/usage",
-            title: "Using Hashable",
-          },
-        ]}
-      />
-
-      <SidebarContent
-        title="Libraries"
-        links={[
-          {
-            link: "/docs/libraries/node",
-            title: "Node.js",
-          },
-          {
-            link: "/docs/libraries/web",
-            title: "Web",
+            link: "/docs/intro",
+            title: "Introduction",
           },
         ]}
       />
@@ -88,7 +74,7 @@ const Docs: Component = () => {
     <div class="min-h-[100vh] flex flex-row justify-center">
       <Sidebar />
 
-      <div class="p-10 pt-16 w-full">
+      <div class="p-10 pt-16 max-w-[70%]">
         <Outlet />
       </div>
     </div>

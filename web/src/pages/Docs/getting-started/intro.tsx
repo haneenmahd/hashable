@@ -1,8 +1,9 @@
 import { Component } from "solid-js";
-import DocSection from "../../components/DocSection";
+import DocSection from "../../../components/DocSection";
+import Link from "../../../components/Link";
 
-const UsingHashable: Component = () => (
-    <div class="max-w-[70%]">
+const Intro: Component = () => (
+    <div>
         <h1 class="text-3xl font-bold text-slate-800">Introduction.</h1>
 
         <DocSection 
@@ -18,14 +19,9 @@ const UsingHashable: Component = () => (
             description="Hashable was developed by me, Haneen Mahdin, a 14 year old Full-stack developer and UI/UX Designer." />
 
         <span class="text-slate-500">You can learn more about Haneen Mahdin at 
-            <a 
-                target="_blank" 
-                class="text-blue-500 hover:underline" 
-                href="https://haneenmahd.github.io">
-                    haneenmahd.github.io
-            </a>.
+            <Link title="haneenmahd.github.io." link="https://haneenmahd.github.io" />
         </span>
     </div>
 );
 
-export default UsingHashable;
+export default Intro;

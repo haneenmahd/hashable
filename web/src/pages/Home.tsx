@@ -18,7 +18,7 @@ const Header: Component = () => (
         <Link href="/learn">Learn</Link>
       </span>
       <span class="mx-3 text-sm text-slate-500 font-medium hover:text-slate-600">
-        <Link href="/docs/usage">Documentation</Link>
+        <Link href="/docs/intro">Documentation</Link>
       </span>
       <span class="mx-3 text-sm text-slate-500 font-medium hover:text-slate-600">
         <Link href="/play">Playground</Link>
