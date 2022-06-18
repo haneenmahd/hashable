@@ -19,8 +19,8 @@ const Sidebar: Component<{
   setAlgorithm: Setter<string>;
   setEncoding: Setter<string>;
 }> = ({ setAlgorithm, setEncoding }) => (
-  <div class="p-5 z-20">
-    <div class="min-w-[16rem] h-[90vh] rounded-md ring-1 ring-slate-200 shadow-lg bg-slate-100">
+  <div class="p-5 z-20 w-screen sm:w-auto h-[30vh] sm:h-auto order-last sm:order-first">
+    <div class="min-w-[16rem] max-h-[230px] sm:max-h-[80vh] overflow-scroll sm:overflow-auto sm:h-[90vh] rounded-md ring-1 ring-slate-200 shadow-lg bg-slate-100">
       <div class="py-2">
         <SidebarElement text="Playground" noBorders />
       </div>
@@ -95,7 +95,7 @@ const Main: Component<{
   const { algorithm, encoding } = options;
 
   return (
-    <div class="w-[100%] h-[100vh] bg-white flex flex-col items-center justify-center">
+    <div class="w-[100%] h-[60vh] sm:h-[100vh] bg-white flex flex-col items-center justify-center">
       <QuickActions
         value={value}
         options={{ algorithm, encoding }}
@@ -104,13 +104,13 @@ const Main: Component<{
 
       <div class="flex flex-col items-center justify-center">
         <input
-          class="max-w-[100%] bg-transparent my-4 text-center font-semibold text-6xl text-slate-800 outline-none focus:placeholder:text-slate-300"
+          class="max-w-[80%] sm:max-w-[100%] bg-transparent my-4 text-center font-semibold text-3xl sm:text-6xl text-slate-800 outline-none focus:placeholder:text-slate-300"
           placeholder="Type string to hash...."
           value={value()}
           onChange={(e) => setValue((e.target as HTMLInputElement).value)}
         />
 
-        <span class="max-w-[80%] break-all text-center my-4 font-semibold slashed-zero text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
+        <span class="max-w-[80%] break-all text-center my-4 font-semibold slashed-zero text-xl sm:text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
           <p>{hash()}</p>
         </span>
       </div>
@@ -124,7 +124,7 @@ const Main: Component<{
         }}
       />
 
-      <div class="mt-12">
+      <div class="mt-12 hidden sm:visible">
         <span class="text-sm text-slate-400">Press "Ctrl+R" to run hash</span>
       </div>
     </div>
@@ -171,7 +171,7 @@ const Playground: Component = () => {
   return (
     <div>
       {loaded() ? (
-        <div class="flex flex-row items-center playground-load-animation">
+        <div class="flex flex-col sm:flex-row items-center playground-load-animation">
           <Sidebar setAlgorithm={setAlgorithm} setEncoding={setEncoding} />
 
           <Main
