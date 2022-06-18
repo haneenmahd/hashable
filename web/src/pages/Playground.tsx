@@ -1,8 +1,15 @@
 import axios from "axios";
-import { Accessor, Component, createSignal, For, Setter } from "solid-js";
+import {
+  Accessor,
+  Component,
+  createEffect,
+  createSignal,
+  For,
+  onMount,
+  Setter,
+} from "solid-js";
 import { Accordion } from "../components/Accordion";
 import { Button } from "../components/Button";
-import Modal from "../components/Modal";
 import { SidebarElement } from "../components/SidebarElement";
 import { toast } from "../components/Toast";
 import copy from "../utils/copy";
@@ -117,21 +124,57 @@ const Main: Component<{
   );
 };
 
+const Loader: Component = () => {
+  const [emoji, setEmoji] = createSignal("🤽");
+
+  let emojis = ["🤽", "⛹️", "🤾‍♂️", "🏀", "🗑", "💥"];
+
+  createEffect(() => {
+    setInterval(() => {
+      let emojiIndex =
+        emojis.indexOf(emoji()) !== -1 ? emojis.indexOf(emoji()) + 1 : 0;
+      let nextEmoji = emojis[emojiIndex];
+
+      setEmoji(nextEmoji);
+    }, 150);
+  });
+
+  return (
+    <div class="min-h-[100vh] flex flex-col items-center justify-center animate-pulse">
+      <h1 class="font-black text-7xl my-5 text-slate-800">{emoji()}</h1>
+    </div>
+  );
+};
+
 const Playground: Component = () => {
+  const [loaded, setLoaded] = createSignal(false);
+
   // hashing options passed onto the api
   const [algorithm, setAlgorithm] = createSignal("md5");
   const [encoding, setEncoding] = createSignal("hex");
 
-  return (
-    <div class="flex flex-row items-center">
-      <Sidebar setAlgorithm={setAlgorithm} setEncoding={setEncoding} />
+  createEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 900);
+  });
 
-      <Main
-        options={{
-          algorithm,
-          encoding,
-        }}
-      />
+  return (
+    <div>
+      {loaded() ? (
+        <div class="flex flex-row items-center playground-load-animation">
+          <Sidebar setAlgorithm={setAlgorithm} setEncoding={setEncoding} />
+
+          <Main
+            options={{
+              algorithm,
+              encoding,
+            }}
+          />
+        </div>
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };
