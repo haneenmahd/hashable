@@ -141,7 +141,9 @@ const Loader: Component = () => {
 
   return (
     <div class="min-h-[100vh] flex flex-col items-center justify-center animate-pulse">
-      <h1 class="font-black text-7xl my-5 text-slate-800">{emoji()}</h1>
+      <span class="font-black text-7xl my-5 text-slate-800 animate-bounce">
+        {emoji()}
+      </span>
     </div>
   );
 };
