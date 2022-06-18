@@ -104,13 +104,13 @@ const Main: Component<{
 
       <div class="flex flex-col items-center justify-center">
         <input
-          class="max-w-[80%] sm:max-w-[100%] bg-transparent my-4 text-center font-semibold text-3xl sm:text-6xl text-slate-800 outline-none focus:placeholder:text-slate-300"
+          class="max-w-[80%] sm:max-w-[100%] bg-transparent my-4 text-center font-semibold text-3xl sm:text-5xl text-slate-800 outline-none focus:placeholder:text-slate-300"
           placeholder="Type string to hash...."
           value={value()}
           onChange={(e) => setValue((e.target as HTMLInputElement).value)}
         />
 
-        <span class="max-w-[80%] break-all text-center my-4 font-semibold slashed-zero text-xl sm:text-3xl text-slate-500 outline-none focus:placeholder:text-slate-300">
+        <span class="max-w-[80%] break-all text-center my-4 font-semibold slashed-zero text-xl sm:text-2xl text-slate-500 outline-none focus:placeholder:text-slate-300">
           <p>{hash()}</p>
         </span>
       </div>
