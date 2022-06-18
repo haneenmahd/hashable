@@ -1,7 +1,7 @@
 {
-  "name": "hashable-server",
+  "name": "hashable-api",
   "version": "1.0.0",
-  "description": "The server which cryptographical functions to the client-web",
+  "description": "The API for hashable",
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon ./index.ts",
