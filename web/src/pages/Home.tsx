@@ -37,7 +37,7 @@ const Hero: Component = () => {
 
         <h1 class="my-2 text-4xl text-slate-800 font-semibold">Hashable</h1>
         <p class="my-2 text-2xl text-slate-500 font-regular">
-          An Interactive and fun way to learn cryptography
+          An interactive and fun way to learn cryptography
         </p>
 
         <div class="my-4 flex flex-row">
@@ -72,7 +72,7 @@ const FeatureCard: Component<{
 
 const Features: Component = () => {
   return (
-    <div class="p-10 grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center self-center">
+    <div class="p-8 sm:p-10 grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center self-center">
       <FeatureCard
         emoji="📖"
         title="Learn"
@@ -88,7 +88,7 @@ const Features: Component = () => {
       <FeatureCard
         emoji="🤾"
         title="Playground"
-        description="An Interactive and fun way to instantly hash strings with different hashing methods and encodings."
+        description="An interactive and fun way to instantly hash strings with different hashing methods and encodings."
       />
     </div>
   );
