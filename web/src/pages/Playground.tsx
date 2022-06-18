@@ -13,6 +13,7 @@ import { Button } from "../components/Button";
 import { SidebarElement } from "../components/SidebarElement";
 import { toast } from "../components/Toast";
 import copy from "../utils/copy";
+import onKeyPress from "../utils/onKeyPress";
 
 const Sidebar: Component<{
   setAlgorithm: Setter<string>;
@@ -57,11 +58,9 @@ const QuickActions: Component<{
   };
   setHash: Setter<string>;
 }> = ({ value, options, setHash }) => {
-  const [isCodeModalVisible, setCodeModalVisible] = createSignal(false);
-
   const fetchHash = async () => {
     const response = await axios.get(
-      `http://localhost:3000/api/hash?algorithm=${options
+      `http://localhost:3000/hash?algorithm=${options
         .algorithm()
         .toLowerCase()}&str=${value()}&encoding=${options
         .encoding()
@@ -70,6 +69,10 @@ const QuickActions: Component<{
 
     setHash(response.data);
   };
+
+  onKeyPress("r", async () => {
+    await fetchHash();
+  });
 
   return (
     <div class="absolute right-5 top-3 flex flex-row items-center">
@@ -120,6 +123,10 @@ const Main: Component<{
           toast("Text copied to clipboard 📋!", 1500);
         }}
       />
+
+      <div class="mt-12">
+        <span class="text-sm text-slate-400">Press "Ctrl+R" to run hash</span>
+      </div>
     </div>
   );
 };
