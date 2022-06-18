@@ -74,7 +74,7 @@ const Docs: Component = () => {
     <div class="min-h-[100vh] flex flex-row justify-center">
       <Sidebar />
 
-      <div class="p-10 pt-16 max-w-[70%]">
+      <div class="px-10 py-20 max-w-[70%]">
         <Outlet />
       </div>
     </div>

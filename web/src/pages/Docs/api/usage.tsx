@@ -31,7 +31,7 @@ const Usage: Component = () => {
                     <Code code="let url = 'hashable-server.herokuapp.com';" />
 
                     So we will see how we can send a request to the server.
-                    <Code code="const res = await fetch(`${url}/hash?str=me&method=md5&encoding=hex`);" />
+                    <Code code="const res = await fetch(`${url}/hash?str=hello&method=md5&encoding=hex`);" />
 
                     We do not include any other kind of data inside the response to reduce the size of the request and make it supaaafast ⚡️! So, the hash is returned directly as the response from the request.
                     <Code code="let hash = res.data;" />
