@@ -1,4 +1,4 @@
-import { Outlet, Route, Routes } from "solid-app-router";
+import { Navigate, Outlet, Route, Routes } from "solid-app-router";
 import { Component } from "solid-js";
 import Home from "./pages/Home";
 import Docs from "./pages/docs/index";
@@ -15,6 +15,8 @@ const App: Component = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/docs" element={<Docs />}>
+        <Route path="/" element={() => <Navigate href="/docs/intro" />} />
+
         <Route path="/intro" element={<Intro />} />
 
         <Route path="/api" element={<Outlet />}>

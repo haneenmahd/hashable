@@ -32,7 +32,7 @@ const Sidebar: Component = () => {
         title="Getting Started"
         links={[
           {
-            link: "/docs/intro",
+            link: "/docs",
             title: "Introduction",
           },
         ]}

@@ -41,13 +41,9 @@ const Encodings: Component = () => {
                 </p>
             </div>
 
-            <div class="my-2 w-full flex items-center justify-between">
+            <div class="my-2 w-full flex items-center justify-start">
                 <div>
-                    <RouterLink title="< Usage" path="/docs/api/usage" />
-                </div>
-
-                <div>
-                    <RouterLink title="Encodings >" path="/docs/api/encodings" />
+                    <RouterLink title="< Methods" path="/docs/api/methods" />
                 </div>
             </div>
         </div>
