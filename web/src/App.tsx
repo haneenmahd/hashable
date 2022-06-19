@@ -1,7 +1,7 @@
 import { Outlet, Route, Routes } from "solid-app-router";
 import { Component } from "solid-js";
-import Docs from "./pages/docs";
 import Home from "./pages/Home";
+import Docs from "./pages/docs/index";
 import Playground from "./pages/Playground";
 import ErrorPage from "./pages/ErrorPage";
 import Intro from "./pages/docs/getting-started/intro";
