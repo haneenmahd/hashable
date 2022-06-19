@@ -1,2 +1,2 @@
-[build.environment]
-    NPM_FLAGS="--prefix=/"
+[build]
+    command = "./scripts/netlify.sh"
