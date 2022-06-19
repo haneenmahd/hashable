@@ -23,4 +23,5 @@ jobs:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 6.0.2
+      - run: ls -R -I node_modules/
       - run: sh scripts/build-web.sh
