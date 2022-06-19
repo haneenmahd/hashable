@@ -34,6 +34,8 @@ app.get("/hash", (req, res) => {
     encoding: convertEncoding(req.query.encoding as string),
   };
 
+  res.set("Access-Control-Allow-Origin", "<origin> | *");
+
   res.end(hash(requestBody));
 });
 
