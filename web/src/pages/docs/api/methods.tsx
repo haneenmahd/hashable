@@ -8,7 +8,7 @@ import RouterLink from "../../../components/RouterLink";
 const Methods: Component = () => {
     return (
         <div>
-            <h1 class="text-3xl font-bold text-slate-800">Methods.</h1>
+            <h1 class="text-3xl font-bold text-slate-800">Methods</h1>
 
             <div class="mt-10">
                 <h1 class="text-xl text-slate-700 font-semibold my-2">MD5</h1>

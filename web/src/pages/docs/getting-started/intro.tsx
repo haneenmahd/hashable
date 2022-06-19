@@ -4,7 +4,7 @@ import Link from "../../../components/Link";
 
 const Intro: Component = () => (
     <div>
-        <h1 class="text-3xl font-bold text-slate-800">Introduction.</h1>
+        <h1 class="text-3xl font-bold text-slate-800">Introduction</h1>
 
         <DocSection 
             title="The Idea behind Hashable" 

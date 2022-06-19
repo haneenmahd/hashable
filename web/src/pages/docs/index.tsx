@@ -57,14 +57,13 @@ const Sidebar: Component = () => {
       />
 
       <SidebarContent
-        title="Playground"
+        title="Examples"
         links={[
           {
-            link: "/docs/playground/usage",
-            title: "Usage",
+            link: "/docs/examples/javascript",
+            title: "Javascript"
           },
-        ]}
-      />
+        ]} />
     </div>
   );
 };
