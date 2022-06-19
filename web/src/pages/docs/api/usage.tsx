@@ -3,6 +3,7 @@ import Code from "../../../components/Code";
 import DocCode from "../../../components/DocCode";
 import DocSection from "../../../components/DocSection";
 import Link from "../../../components/Link";
+import RouterLink from "../../../components/RouterLink";
 
 const Usage: Component = () => {
     return (
@@ -36,6 +37,33 @@ const Usage: Component = () => {
                     We do not include any other kind of data inside the response to reduce the size of the request and make it supaaafast ⚡️! So, the hash is returned directly as the response from the request.
                     <Code code="let hash = res.data;" />
                 </p>
+            </div>
+
+            <div class="mt-10">
+                <h1 class="text-xl text-slate-700 font-semibold my-2">Request structure</h1>
+                <p class="text-slate-500 my-2 leading-7">
+                    To send a successful request to our API, you need to have three query parameters inside your request.
+                </p>
+
+                <ul class="list-inside px-2 py-3 text-slate-500">
+                    <li class="list-disc mt-3">
+                        <b class="font-semibold text-slate-500">str</b> <DocCode code="string" /> - The string or message to hash.
+                    </li>
+
+                    <li class="list-disc mt-3">
+                        <b class="font-semibold text-slate-500">method</b> <DocCode code="md5 | sha256 | sha512" /> - The type of method to use to hash the string.
+                    </li>
+
+                    <li class="list-disc mt-3">
+                        <b class="font-semibold text-slate-500">encoding</b> <DocCode code="hex | base64 | base64url" /> - The type of encoding to use to encode the hash.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full flex items-center justify-end">
+                <div>
+                    <RouterLink title="Methods >" path="/docs/api/methods" />
+                </div>
             </div>
         </div>
     );

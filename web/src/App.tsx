@@ -6,6 +6,8 @@ import Playground from "./pages/Playground";
 import ErrorPage from "./pages/ErrorPage";
 import Intro from "./pages/docs/getting-started/intro";
 import APIUsage from "./pages/docs/api/usage";
+import APIMethods from "./pages/docs/api/methods";
+import APIEncodings from "./pages/docs/api/encodings";
 
 const App: Component = () => {
   return (
@@ -16,6 +18,8 @@ const App: Component = () => {
 
         <Route path="/api" element={<Outlet />}>
           <Route path="usage" element={<APIUsage />} />
+          <Route path="methods" element={<APIMethods />} />
+          <Route path="encodings" element={<APIEncodings />} />
         </Route>
       </Route>
       <Route path="/play" element={<Playground />} />
