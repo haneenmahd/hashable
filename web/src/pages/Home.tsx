@@ -21,7 +21,7 @@ const Hero: Component = () => {
             <Button title="Get Started" primary />
           </div>
           <div class="mx-2">
-            <Button title="Learn More" />
+            <Button title="Read docs" />
           </div>
         </div>
       </div>
