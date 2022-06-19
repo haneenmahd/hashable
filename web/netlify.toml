@@ -1,5 +1,5 @@
 [build]
-    command = "./scripts/netlify.sh"
+    command = "sh ./scripts/netlify.sh"
 [build.environment]
     NODE_VERSION = "16"
     NPM_FLAGS = "--version"
