@@ -1,5 +1,6 @@
 import { Link, Outlet } from "solid-app-router";
 import { Component, For } from "solid-js";
+import Header from "../../components/Header";
 
 const SidebarContent: Component<{
   title: string;
@@ -70,12 +71,16 @@ const Sidebar: Component = () => {
 
 const Docs: Component = () => {
   return (
-    <div class="min-h-[100vh] flex flex-row justify-center">
+    <div>
+      <Header />
+      
+      <div class="min-h-[100vh] flex flex-row justify-center">
       <Sidebar />
 
       <div class="px-10 py-20 max-w-[70%]">
         <Outlet />
       </div>
+    </div>
     </div>
   );
 };
