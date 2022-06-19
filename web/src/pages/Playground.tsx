@@ -60,7 +60,7 @@ const QuickActions: Component<{
 }> = ({ value, options, setHash }) => {
   const fetchHash = async () => {
     const response = await axios.get(
-      `http://hashable-api.herokuapp.com/hash?algorithm=${options
+      `https://hashable-api.herokuapp.com/hash?algorithm=${options
         .algorithm()
         .toLowerCase()}&str=${value()}&encoding=${options
         .encoding()
