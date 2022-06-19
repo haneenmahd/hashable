@@ -3,6 +3,6 @@ npm install
 cd web
 echo "Installing Packages for Web 📦"
 npm install
-cd ../server
-echo "Installing Packages for Server 📦"
+cd ../api
+echo "Installing Packages for API 📦"
 npm install

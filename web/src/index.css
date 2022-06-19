@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+.playground-load-animation {
+    -webkit-animation: ping 0.8s cubic-bezier(0.74, 0.66, 0.11, 1.06);
+    animation: ping 0.8s cubic-bezier(0.74, 0.66, 0.11, 1.06);
+}
+
+@-webkit-keyframes ping {
+    from {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes ping {
+    from {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
