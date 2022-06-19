@@ -1,5 +1,5 @@
 [build]
-    command = "sh ./scripts/netlify.sh"
+    command = "chmod +x ./scripts/netlify.sh && ./scripts/netlify.sh"
 [build.environment]
     NODE_VERSION = "16"
     NPM_FLAGS = "--version"
