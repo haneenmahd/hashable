@@ -12,7 +12,7 @@ const Javascript: Component = () => (
             description="It's so easy and simple to hash any string but let's take a look at the word that every programmer should write 😅!" />
 
         <MultilineCode codes={[
-            "let url = 'https://hashable-server.herokuapp.com';",
+            "let url = 'https://hashable-api.herokuapp.com';",
             "let string = 'hello world';",
             "let method = 'md5';",
             "let encoding = 'hex';",

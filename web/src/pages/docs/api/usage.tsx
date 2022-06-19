@@ -22,14 +22,14 @@ const Usage: Component = () => {
 
             <span>
                 <span class="text-slate-500">Our server is hosted on: </span>
-                <Link title="hashable-server.herokuapp.com" link="https://hashable-server.herokuapp.com" />
+                <Link title="hashable-api.herokuapp.com" link="https://hashable-api.herokuapp.com" />
             </span>
 
             <div class="mt-10">
                 <h1 class="text-xl text-slate-700 font-semibold my-2">Sending a sample request</h1>
                 <p class="text-slate-500 my-2 leading-7">
                     First of all we will create a variable to store the url of the server. This will be helpful to us later, if we wanna send multiple requests.
-                    <Code code="let url = 'hashable-server.herokuapp.com';" />
+                    <Code code="let url = 'hashable-api.herokuapp.com';" />
 
                     So we will see how we can send a request to the server.
                     <Code code="const res = await fetch(`${url}/hash?str=hello&method=md5&encoding=hex`);" />

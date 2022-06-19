@@ -1,6 +1,6 @@
 ## Hashable API
 
-Hashable API is hosted on heroku at the domain: https://hashable-server.herokuapp.com.
+Hashable API is hosted on heroku at the domain: https://hashable-api.herokuapp.com.
 
 It is open to public to use.
 

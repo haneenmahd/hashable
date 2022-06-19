@@ -31,7 +31,7 @@ Here is on example using **Javascript**, which represents a simple program that 
 ```js
 const axios = require("axios");
 
-const reqUrl = "https://hashable-server.herokuapp.com";
+const reqUrl = "https://hashable-api.herokuapp.com";
 
 // string going to be hashed
 const str = "HelloWorld";

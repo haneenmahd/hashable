@@ -7,7 +7,7 @@ export default class App extends React.Component {
         this.props = props;
         
         this.state = {
-          reqUrl: "https://hashable-server.herokuapp.com",
+          reqUrl: "https://hashable-api.herokuapp.com",
           str: "HelloWorld",
           algo: "sha256",
           encoding: "hex",
