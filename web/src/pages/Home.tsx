@@ -2,6 +2,7 @@ import { Component } from "solid-js";
 import { Button } from "../components/Button";
 import Header from "../components/Header";
 import LogoImage from "../assets/logo.svg";
+import { LinkButton } from "../components/LinkButton";
 
 const Hero: Component = () => {
   return (
@@ -18,10 +19,10 @@ const Hero: Component = () => {
 
         <div class="my-4 flex flex-row">
           <div class="mx-2">
-            <Button title="Get Started" primary />
+            <LinkButton title="Get Started" href="/play" primary />
           </div>
           <div class="mx-2">
-            <Button title="Read docs" />
+            <LinkButton title="Read docs" href="/docs/intro" />
           </div>
         </div>
       </div>
