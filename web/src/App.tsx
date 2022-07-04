@@ -9,11 +9,13 @@ import APIUsage from "./pages/docs/api/usage";
 import APIMethods from "./pages/docs/api/methods";
 import APIEncodings from "./pages/docs/api/encodings";
 import ExampleJavascript from "./pages/docs/examples/javascript";
+import ComingSoon from "./pages/ComingSoon";
 
 const App: Component = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/learn" element={<ComingSoon />} />
       <Route path="/docs" element={<Docs />}>
         <Route path="/" element={() => <Navigate href="/docs/intro" />} />
 
