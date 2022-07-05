@@ -3,6 +3,7 @@ import { Button } from "../components/Button";
 import Header from "../components/Header";
 import LogoImage from "../assets/logo.svg";
 import { LinkButton } from "../components/LinkButton";
+import BuyMeACoffee from "../components/BuyMeACoffee";
 
 const Hero: Component = () => {
   return (
@@ -76,6 +77,8 @@ const Footer: Component = () => (
     <span class="text-slate-400 font-normal">
       MIT Licensed | Copyright © 2021-present Haneen Mahdin
     </span>
+
+    <BuyMeACoffee />
   </footer>
 );
 
