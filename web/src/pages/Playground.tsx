@@ -5,13 +5,13 @@ import {
   createEffect,
   createSignal,
   For,
-  onMount,
   Setter,
 } from "solid-js";
 import { Accordion } from "../components/Accordion";
 import { Button } from "../components/Button";
 import { SidebarElement } from "../components/SidebarElement";
 import { toast } from "../components/Toast";
+import getApiHost from "../utils/getApiHost";
 import copy from "../utils/copy";
 import onKeyPress from "../utils/onKeyPress";
 
@@ -59,8 +59,9 @@ const QuickActions: Component<{
   setHash: Setter<string>;
 }> = ({ value, options, setHash }) => {
   const fetchHash = async () => {
+    const apiHost = getApiHost();
     const response = await axios.get(
-      `https://hashable-api.herokuapp.com/hash?algorithm=${options
+      `${apiHost}/hash?algorithm=${options
         .algorithm()
         .toLowerCase()}&str=${value()}&encoding=${options
         .encoding()
