@@ -73,7 +73,7 @@ const Features: Component = () => {
 };
 
 const Footer: Component = () => (
-  <footer class="p-8 text-center">
+  <footer class="flex flex-col sm:flex-row items-center justify-center px-8 py-5 text-center">
     <span class="text-slate-400 font-normal">
       MIT Licensed | Copyright © 2021-present Haneen Mahdin
     </span>
