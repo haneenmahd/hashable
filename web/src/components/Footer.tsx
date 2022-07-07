@@ -1,13 +1,18 @@
 import { Component } from "solid-js";
 import BuyMeACoffee from "./BuyMeACoffee";
+import SocialLinks from "./SocialLinks";
 
 const Footer: Component = () => (
-  <footer class="flex flex-col sm:flex-row items-center justify-center px-8 py-5 text-center">
-    <span class="text-slate-400 font-normal">
-      MIT Licensed | Copyright © 2021-present Haneen Mahdin
-    </span>
+  <footer class="px-8 py-5 text-center">
+    <div class="flex flex-col sm:flex-row items-center justify-center">
+      <span class="text-slate-400 font-normal">
+        MIT Licensed | Copyright © 2021-present Haneen Mahdin
+      </span>
 
-    <BuyMeACoffee />
+      <BuyMeACoffee />
+    </div>
+
+    <SocialLinks />
   </footer>
 );
 

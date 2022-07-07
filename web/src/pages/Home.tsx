@@ -1,10 +1,8 @@
 import { Component } from "solid-js";
-import { Button } from "../components/Button";
-import Header from "../components/Header";
 import LogoImage from "../assets/logo.svg";
-import { LinkButton } from "../components/LinkButton";
-import BuyMeACoffee from "../components/BuyMeACoffee";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import { LinkButton } from "../components/LinkButton";
 
 const Hero: Component = () => {
   return (
